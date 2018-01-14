@@ -1,32 +1,9 @@
-# AngularSeed
+## Able Auto Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-on branch master
 [Deploy github pages](https://alligator.io/angular/deploying-angular-app-github-pages/)
-ng build --prod --base-href "www.ableautotech.com"
-ngh (angular-cli-ghpages)
+* ng build --prod --base-href "http://www.ableautotech.com"
+* ngh (angular-cli-ghpages)
+* change github pages [settings](https://github.com/bethgrace5/AbleAutoWebsite/settings) to  www.ableautotech.com
+
+Does it matter which branch this sequence is run on?
+Can I configure ngh to set the github pages settings to the correct url, instead of it overwriting it to the github url?
