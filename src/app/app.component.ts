@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  isMenuCollapsed=true;
+  onActivate(e) {
+    window.scrollTo(0, 0);
+  }
 }

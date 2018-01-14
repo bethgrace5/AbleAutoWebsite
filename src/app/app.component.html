@@ -51,14 +51,14 @@
 <button class="btn btn-default btn-appointment hidden-sm hidden-xs">Appointments</button>
 
 <div class="router-outlet">
-  <router-outlet></router-outlet>
+  <router-outlet (activate)='onActivate($event)' ></router-outlet>
 </div>
 <div class="footer-top"></div>
 <div class="footer">
   <div class="row">
     <div class="col-xs-12 col-sm-3">
       <a routerLink="dashboard">
-        <img width="120" src="../assets/img/square_black.png">
+        <img width="120" src="./assets/img/square_black.png">
       </a>
       <h4> <a href="tel:+6616370669" > (661) 637-0669 </a> </h4>
       <h5> Monday - Friday 8AM to 5PM </h5>
