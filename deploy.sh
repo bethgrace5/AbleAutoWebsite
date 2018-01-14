@@ -7,6 +7,7 @@ echo "";
 # Setup CNAME to point to custom domain
 echo "************************************************";
 echo "www.ableautotech.com" > dist/CNAME;
+echo "www.ableautotech.com" > CNAME;
 echo "";
 
 # Publish project
