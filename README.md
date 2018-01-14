@@ -7,3 +7,4 @@
 
 Does it matter which branch this sequence is run on?
 Can I configure ngh to set the github pages settings to the correct url, instead of it overwriting it to the github url?
+How can I use a relative path for loading images, so they load quicker?
