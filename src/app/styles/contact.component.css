@@ -1,0 +1,33 @@
+
+div.directions {
+  margin-top: 90px;
+  padding: 50px;
+  min-height: 200px;
+  background-color: #E8E9E8; 
+  background-image: url('../../assets/img/bg01.png');
+  border-top: 2px solid #E8E9E8;
+  border-bottom: 2px solid #E8E9E8;
+}
+/* =================== 2. Large Devices, Wide Screens ======================= */
+@media only screen and (max-width : 1200px) {
+}
+/* =================== 3. Medium Devices, Desktops ========================== */
+@media only screen and (max-width : 992px) {
+}
+/* =================== 4.  Small Devices, Tablets =========================== */
+@media only screen and (max-width : 768px) {
+}
+/* =================== 5. Extra Small Devices, Phones ======================= */
+@media only screen and (max-width : 480px) {
+}
+/* =================== 6.  Custom, iPhone Retina ============================ */
+@media only screen and (max-width : 320px) {
+}
+
+/* REMOVE PARALLAX IE10+ CSS */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+}
+/* REMOVE PARALLAX IE Edge 12+ CSS */
+@supports (-ms-accelerator:true) {
+}
+
