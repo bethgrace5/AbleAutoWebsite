@@ -38,6 +38,10 @@
       <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/service">Services</a></li>
       <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/career">Careers</a></li>
       <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/about">About</a></li>
+      <button routerLink="/appointment" class="btn btn-default btn-appointment hidden-sm hidden-xs">
+        <span class="fa fa-user"></span>
+        Appointments
+      </button>
     </ul>
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
@@ -45,17 +49,28 @@
 
 <div class="mobile-phone visible-xs visible-sm">
   <h2> <a href="tel:+16616370669" > (661) 637-0669 </a> </h2>
-  <button class="btn btn-default btn-appointment">Appointments</button>
 </div>
 
-<button class="btn btn-default btn-appointment hidden-sm hidden-xs">
-  <span class="fa fa-user"></span>
-  Appointments
-</button>
 
 <div class="router-outlet">
-  <router-outlet (activate)='onActivate($event)' ></router-outlet>
+
+  <div class="row" style="position:fixed; z-index:1000;">
+    <div class="col col-xs-12">
+      <div class="alert alert-warning" role="alert" style="margin-top:5px">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+        <strong style="font-size:16px"> Website Under Construction </strong>
+        <span style="font-size:16px">
+          please find the latest information and request appointments at our current website
+          <a href="https://www.ableautoshop.com">www.ableautoshop.com</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <hr/>
+
+  <router-outlet (activate)='onActivate($event)'></router-outlet>
 </div>
+
 <div class="footer-top"></div>
 <div class="footer">
   <div class="row">
