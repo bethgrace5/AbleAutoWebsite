@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+#google-map-iframe {
+  width: 100%;
+}
+
 div.row {
   margin: 0;
 }
@@ -13,7 +17,7 @@ h1 {
 }
 
 div.header {
-  margin: 90px 0px;
+  margin: 130px 10px;
   padding: 0px;
 
 }
@@ -130,7 +134,7 @@ div.footer h5 {
     padding: 30px;
   }
   div.router-outlet {
-    padding-top: 1px;
+    padding-top: 50px;
   }
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */
