@@ -9,6 +9,16 @@
   background-repeat: no-repeat;
 }
 
+#location-banner {
+  margin-top: 90px;
+  height: 460px;
+  background-image: url('assets/img/location-front.jpg');
+  background-size:100%;
+  background-attachment:fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
 #google-map-iframe {
   width: 100%;
 }
@@ -44,7 +54,7 @@ div.footer-top {
 }
 
 .feature-icon {
-  border: 2px solid #dedede;
+  border: 6px solid #dedede;
   border-radius: 100%;
   background-color: rgb(77, 77, 127);
   color: white;
@@ -152,11 +162,18 @@ div.footer h5 {
 }
 /* =================== 3. Medium Devices, Desktops ========================== */
 @media only screen and (max-width : 992px) {
+  #location-banner {
+    height: 400px;
+    background-position: 0px 137px;
+  }
 }
 /* =================== 4.  Small Devices, Tablets =========================== */
 @media only screen and (max-width : 768px) {
   #banner-image {
     margin-top: 50px;
+  }
+  #location-banner {
+    height: 300px;
   }
   div.footer {
     padding: 30px;
@@ -166,6 +183,9 @@ div.footer h5 {
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */
 @media only screen and (max-width : 480px) {
+  #location-banner {
+    height: 200px;
+  }
   div.footer {
     padding: 20px;
   }
