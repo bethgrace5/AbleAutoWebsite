@@ -2,7 +2,7 @@
 
 /* =================== 2. Large Devices, Wide Screens ======================= */
 
-/* =================== 3. Medium Devices, Desktops ========================== */@media only screen and (max-width:992px){#location-banner{height:400px;background-position:0 137px}}
+/* =================== 3. Medium Devices, Desktops ========================== */@media only screen and (max-width:992px){#location-banner{height:400px}}
 
 /* =================== 4.  Small Devices, Tablets =========================== */@media only screen and (max-width:768px){#banner-image{margin-top:50px}#location-banner{height:300px}div.footer{padding:30px}}
 
