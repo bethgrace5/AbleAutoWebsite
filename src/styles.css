@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+#feature-banner {
+  height: 460px;
+  background-image: url('assets/img/mojave-offroad-thumb.jpg');
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #google-map-iframe {
   width: 100%;
 }
@@ -17,7 +26,7 @@ h1 {
 }
 
 div.header {
-  margin: 130px 10px;
+  margin: 90px 0px 0px 0px;
   padding: 0px;
 
 }
@@ -34,6 +43,23 @@ div.footer-top {
   background-position: bottom left;
 }
 
+.feature-icon {
+  border: 2px solid #dedede;
+  border-radius: 100%;
+  background-color: rgb(77, 77, 127);
+  color: white;
+  padding: 50px;
+  margin: 30px auto 10px auto;
+}
+
+span.feature-icon-text {
+  display: block;
+  max-width: 200px;
+  margin: 15px auto;
+  font-size: 16px;
+  color: #404040;
+}
+
 div.social-icon {
   padding: 5px;
 }
@@ -45,8 +71,7 @@ div.social-icon i.fa-twitter-square.fa-2x {
 }
 
 div.feature-section {
-  border: 2px solid #d9d9d9;
-  border-radius: 5px;
+  background-image: url('/assets/img/sect5.jpeg');
 }
 
 div.feature-image {
@@ -130,11 +155,13 @@ div.footer h5 {
 }
 /* =================== 4.  Small Devices, Tablets =========================== */
 @media only screen and (max-width : 768px) {
+  #banner-image {
+    margin-top: 50px;
+  }
   div.footer {
     padding: 30px;
   }
   div.router-outlet {
-    padding-top: 50px;
   }
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */
