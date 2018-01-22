@@ -2,8 +2,8 @@
 <div style="position:fixed; z-index:1000; margin: 55px 10px;">
     <div class="alert alert-warning" role="alert">
       <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-      <strong style="font-size:16px"> Website Under Construction </strong>
-      <span style="font-size:16px">
+      <strong> Website Under Construction </strong>
+      <span>
         please find the latest information and request appointments at our current website
         <a href="https://www.ableautoshop.com">www.ableautoshop.com</a>
       </span>
@@ -51,7 +51,7 @@
       <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/service">Services</a></li>
       <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/career">Careers</a></li>
       <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/about">About</a></li>
-      <button routerLink="/appointment" class="btn btn-default btn-appointment hidden-sm hidden-xs">
+      <button (click)="isMenuCollapsed = true" routerLink="/appointment" class="btn btn-default btn-appointment">
         <span class="fa fa-calendar-check-o"></span>
         Appointments
       </button>
@@ -84,7 +84,6 @@
       <a routerLink="contact">Contact Us</a><br/>
       <a routerLink="contact">Directions</a><br/>
       <a routerLink="contact">Location</a><br/>
-      <a routerLink="appointment">Make Appointment</a><br/>
     </div>
     <div class="col-xs-12 col-sm-3">
       <a routerLink="service">Services</a><br/>
