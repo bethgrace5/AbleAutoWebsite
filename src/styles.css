@@ -103,10 +103,13 @@ div.dark-section {
   background-color: #1e4d7b;
   padding: 60px 30px;
 }
+div.wordy-section {
+  padding: 60px 30px 60px 30px;
+}
 
 div.feature-section-1 {
   background-image: url('/assets/img/sect5.jpeg');
-  padding: 0px 60px 50px 60px;
+  padding: 60px 30px 60px 30px;
   border-bottom: 4px solid #d9d9d9;
   border-top: 4px solid #d9d9d9;
 }
@@ -201,7 +204,7 @@ div.footer h5 {
 
 .btn.btn-default.btn-appointment {
   margin: 10px;
-  background-color: #0042D4;
+  background-color: #e60000;
   color: white;
   letter-spacing: 1px;
 }
