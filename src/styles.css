@@ -4,13 +4,6 @@ p {
   color: #595959;
 }
 
-h1, h2, h3 {
-  color: blue;
-}
-h1, h2, h3 {
-  color: blue;
-}
-
 #feature-banner {
   height: 460px;
   background-image: url('assets/img/mojave-offroad-thumb.jpg');
@@ -94,54 +87,92 @@ div.social-icon i.fa-twitter-square.fa-2x {
   color: #5CBBEE;
 }
 
-div.feature-section {
+span.dark-section-list {
+  display: block;
+}
+.dark-section h1 {
+  color: #f2f2f2;
+  padding-bottom: 40px;
+}
+
+.dark-section p {
+  color: #f2f2f2;
+}
+div.dark-section {
+  color: #f2f2f2;
+  background-color: #1e4d7b;
+  padding: 60px 30px;
+}
+
+div.feature-section-1 {
   background-image: url('/assets/img/sect5.jpeg');
-  padding: 0px 30px 50px 30px;
+  padding: 0px 60px 50px 60px;
+  border-bottom: 4px solid #d9d9d9;
+  border-top: 4px solid #d9d9d9;
+}
+div.feature-section {
+  background-image: url('/assets/img/bg01.png');
+  padding: 60px 30px 60px 30px;
+  border-bottom: 4px solid #d9d9d9;
+  border-top: 4px solid #d9d9d9;
 }
 div.appointment-section {
   background-image: url('/assets/img/bg01.png');
   padding: 50px 30px;
 }
 
+.feature-image-text {
+  border-radius: 0px 0px 7px 7px;
+  color: white;
+  padding: 10px;
+  min-height: 100px;
+  width: 200px;
+  background-color: #8c8c8c;
+  margin: 0px auto 10px auto;
+}
+
 div.feature-image {
+  background-color: #ffffff;
+  border: 2px solid #bfbfbf;
   height: 200px;
   width: 200px;
-  margin: 0 auto;
+  margin: 40px auto 0px auto;
+  border-radius: 7px 7px 0px 0px;
 }
 
 div.feature-image.aaa {
   background-image: url("assets/img/aaa-approved-auto-repair.png");
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 div.feature-image.ase {
   background-image: url("assets/img/ASE_large.png");
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 div.feature-image.tech-net {
   background-image: url("assets/img/TechnetHeader.png");
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 div.feature-image.toyourrescue {
   background-image: url("assets/img/to_your_rescue.jpg");
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 div.feature-image.carquest {
   background-image: url("assets/img/carquest.png");
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 div.feature-image.jasper {
   background-image: url("assets/img/jasper.jpg");
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -181,6 +212,12 @@ div.footer h5 {
 }
 /* =================== 3. Medium Devices, Desktops ========================== */
 @media only screen and (max-width : 992px) {
+  div.dark-section {
+    padding: 50px 20px;
+  }
+  div.feature-section-1 {
+    padding: 50px 20px;
+  }
   div.feature-section {
     padding: 50px 20px;
   }
@@ -190,6 +227,12 @@ div.footer h5 {
 }
 /* =================== 4.  Small Devices, Tablets =========================== */
 @media only screen and (max-width : 768px) {
+  div.dark-section {
+    padding: 50px 10px;
+  }
+  div.feature-section-1 {
+    padding: 50px 10px;
+  }
   div.feature-section {
     padding: 50px 10px;
   }
