@@ -1,13 +1,14 @@
+# Deploy Script
+
 # Build project
 echo "************************************************";
 echo "building...";
-ng build --prod --base-href "http://www.ableautotech.com";
+ng build --prod --base-href "./";
 echo "";
 
-# Setup CNAME to point to custom domain
+# Setup repository CNAME file to point to custom domain
 echo "************************************************";
-echo "www.ableautotech.com" > dist/CNAME;
-echo "www.ableautotech.com" > CNAME;
+echo $'ableautotech.com' > dist/CNAME;
 echo "";
 
 # Publish project
