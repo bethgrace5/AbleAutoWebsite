@@ -8,7 +8,7 @@ echo "";
 
 # Setup repository CNAME file to point to custom domain
 echo "************************************************";
-echo $'ableautotech.com' > dist/CNAME;
+echo $'www.ableautotech.com' > dist/CNAME;
 echo "";
 
 # Publish project
