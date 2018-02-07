@@ -2,7 +2,7 @@
 .navbar-default {
   padding: 10px;
   height: 95px;
-  border-bottom: 4px solid rgb(77, 77, 127);
+  border-bottom: 3px solid #1a75ff;
 }
 
 div nav.navbar.navbar-default.navbar-fixed-top {
@@ -20,7 +20,7 @@ div.mobile-phone {
   background-color: #F8F8F8;
   padding: 2px 0px;
   text-align: center;
-  border-bottom: 4px solid rgb(77, 77, 127);
+  border-bottom: 3px solid #1a75ff;
 }
 div.mobile-phone h2 a, div.desktop-phone h2 a {
   color: #000000;
