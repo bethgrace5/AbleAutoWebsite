@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard.component';
-import { ContactComponent }     from './contact.component';
-import { ServiceComponent }     from './service.component';
-import { CareerComponent }      from './career.component';
-import { AboutComponent }       from './about.component';
-import { ApplyComponent }       from './apply.component';
-import { AppointmentComponent } from './appointment.component';
+import { DashboardComponent }   from './dashboard/dashboard.component';
+import { ContactComponent }     from './contact/contact.component';
+import { ServiceComponent }     from './service/service.component';
+import { CareerComponent }      from './career/career.component';
+import { AboutComponent }       from './about/about.component';
+import { ApplyComponent }       from './apply/apply.component';
+import { AppointmentComponent } from './appointment/appointment.component';
 
 //import { FormsModule }          from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
