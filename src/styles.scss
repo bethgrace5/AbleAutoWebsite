@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~material-icons/css/material-icons.min.css';
 
 p {
   color: #595959;
@@ -6,7 +8,7 @@ p {
 
 
 #feature-banner {
-  height: 460px;
+  height: 260px;
   background-image: url('assets/img/mojave-offroad-thumb.jpg');
   background-size:cover;
   background-attachment:fixed;
@@ -62,19 +64,17 @@ div.footer-top {
 }
 
 .feature-icon {
-  border: 6px solid #dedede;
+  border: 3px solid #dedede;
   border-radius: 100%;
   background-color: #1a75ff;
   color: white;
-  padding: 50px;
-  margin: 30px auto 10px auto;
+  padding: 9px;
 }
 
 span.feature-icon-text {
   display: block;
-  max-width: 200px;
-  margin: 15px auto;
-  font-size: 16px;
+  margin: 18px auto;
+  font-size: 14px;
   color: #404040;
 }
 
@@ -134,7 +134,6 @@ div.feature-section-1 {
 }
 div.feature-section {
   background-image: url('/assets/img/bg01.png');
-  padding: 60px 30px 60px 30px;
   border-bottom: 4px solid #d9d9d9;
   border-top: 4px solid #d9d9d9;
 }
@@ -244,7 +243,7 @@ div.footer h5 {
     padding: 50px 20px;
   }
   div.feature-section {
-    padding: 50px 20px;
+    padding: 10px 0;
   }
   div.appointment-section {
     padding: 50px 20px;
@@ -259,7 +258,7 @@ div.footer h5 {
     padding: 50px 10px;
   }
   div.feature-section-1 {
-    padding: 50px 10px;
+    padding: 20px 10px;
   }
   div.feature-section {
     padding: 50px 10px;

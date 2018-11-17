@@ -1,3 +1,11 @@
+#feature-banner {
+  height: 260px;
+  background-image: url('../../assets/img/mojave-offroad-thumb.jpg');
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* =================== 2. Large Devices, Wide Screens ======================= */
 @media only screen and (max-width : 1200px) {

@@ -1,68 +1,44 @@
-<!--
-<div style="position:fixed; z-index:1000; margin: 55px 10px;">
-    <div class="alert alert-warning" role="alert">
-      <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-      <strong> Website Under Construction </strong>
-      <span>
-        please find the latest information and request appointments at our current website
-        <a href="https://www.ableautoshop.com">www.ableautoshop.com</a>
-      </span>
+<mat-toolbar class="main-toolbar">
+  <mat-toolbar-row>
+    <div class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
+      <img src="../assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair"/>
     </div>
-</div>
--->
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+  </mat-toolbar-row>
+</mat-toolbar>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-<div class="container-fluid">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" (click)="isMenuCollapsed = !isMenuCollapsed"
-      data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard"></a>
-    <div class="desktop-phone visible-md visible-lg visible-xl">
-      <h2> <a href="tel:+16616370669" > (661) 637-0669 </a> </h2>
-    </div>
-  </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" [collapse]="isMenuCollapsed">
-    <ul class="nav navbar-nav">
-      <!--
-      <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="#">Separated link</a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="#">One more separated link</a></li>
-      </ul>
-      </li>
-      -->
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/contact">Directions</a></li>
-      <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/service">Services</a></li>
-      <li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/career">Careers</a></li>
-      <!--<li routerLinkActive="active" (click)="isMenuCollapsed = true"><a routerLink="/about">About</a></li>-->
-      <button (click)="isMenuCollapsed = true" routerLink="/appointment" class="btn btn-default btn-appointment">
-        <span class="fa fa-calendar-check-o"></span>
-        Appointments
+<mat-card>
+    <div class="action-button">
+      <button href="tel:+16616370669" mat-fab color="basic">
+        <mat-icon aria-label="">phone</mat-icon>
       </button>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
-</nav>
+      <br/>
+      CALL
+    </div>
+    <div>
+      <button href="tel:+16616370669" mat-fab color="basic">
+        <mat-icon aria-label="">phone</mat-icon>
+      </button>
+      <br/>
+      CALL
+    </div>
+</mat-card>
 
-<div class="mobile-phone visible-xs visible-sm">
-  <h2> <a href="tel:+16616370669" > (661) 637-0669 </a> </h2>
-</div>
+<mat-card>
+    <button mat-flat-button color="accent" routerLink="/appointment">
+      <mat-icon aria-label="">calendar_today</mat-icon>
+      Appointments
+    </button>
+</mat-card>
+
+<mat-card>
+    <ul class="nav navbar-nav navbar-right">
+      <li routerLinkActive="active"><a routerLink="/contact">Directions</a></li>
+      <li routerLinkActive="active"><a routerLink="/service">Services</a></li>
+      <li routerLinkActive="active"><a routerLink="/career">Careers</a></li>
+    </ul>
+</mat-card>
 
 
 <div class="router-outlet">

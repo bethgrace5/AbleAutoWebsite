@@ -1,6 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {
+  MatButtonModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatIconRegistry,
+  MatCardModule
+} from '@angular/material';
+
 
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
@@ -14,11 +23,12 @@ import { AppointmentComponent } from './appointment/appointment.component';
 //import { FormsModule }          from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
-//bootstrap alert import part 1
-import {AlertModule} from 'ngx-bootstrap';
-//import { DatepickerModule } from 'ng2-bootstrap';
-//import { DropdownModule } from 'ng2-bootstrap';
-import { CollapseModule } from 'ngx-bootstrap';
+import {
+  AlertModule,
+  CollapseModule,
+  //DatepickerModule,
+  //DropdownModule
+} from 'ngx-bootstrap';
 
 const appRoutes: Routes = [
   { path: 'dashboard',   component: DashboardComponent },
@@ -49,7 +59,12 @@ const appRoutes: Routes = [
     //FormsModule,
     RouterModule.forRoot(appRoutes),
     //DropdownModule,
-    CollapseModule
+    CollapseModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
