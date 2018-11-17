@@ -1,7 +1,32 @@
-<div class="header">
-  <div id="feature-banner">
+<mat-card>
+  <div class="d-flex justify-content-around">
+    <div class="action-button-container">
+      <button href="tel:+16616370669" mat-fab color="basic">
+        <mat-icon aria-label="">phone</mat-icon>
+      </button>
+      <span class="action-button-text">
+        call
+      </span>
+    </div>
+    <div class="action-button-container">
+      <button href="tel:+16616370669" mat-fab color="basic">
+        <mat-icon aria-label="">directions</mat-icon>
+      </button>
+      <span class="action-button-text">
+        directions
+      </span>
+    </div>
+    <div class="action-button-container">
+      <button mat-fab color="accent" routerLink="/appointment">
+        <mat-icon aria-label="">calendar_today</mat-icon>
+      </button>
+      <span class="action-button-text">
+        book
+      </span>
+    </div>
   </div>
-</div>
+</mat-card>
+
 
 <div class="feature-section">
   <ul>
@@ -65,7 +90,7 @@
 <div class="wordy-section">
   <div class="row">
     <div class="col-sm-4 col-xs-12">
-      <img style="border:2px solid #e6e6e6; border-radius: 4px;" class="img img-responsive" src="./assets/img/green-toolbox.jpg">
+      <img style="max-width:200px; border:2px solid #e6e6e6; img-responsive" class="img img-responsive" src="./assets/img/green-toolbox.jpg">
     </div>
     <div class="col-sm-8 col-xs-12">
       <h1>Now Equipped With New Technology</h1>
@@ -185,7 +210,8 @@
       </p>
     </div>
     <div class="col-sm-4">
-      <img style="border:2px solid #e6e6e6; border-radius: 4px;" class="img img-responsive" src="./assets/img/sunset-tire.jpg">
+      <img style="max-width:200px; border:2px solid #e6e6e6; img-responsive" class="img img-responsive" src="./assets/img/sunset-tire.jpg">
+
     </div>
   </div>
 </div>

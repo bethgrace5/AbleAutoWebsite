@@ -2,16 +2,40 @@
 .main-toolbar {
   padding: 30px 0 10px 0;
   border-bottom: 3px solid #1a75ff;
-  //position: fixed;
+  position: fixed;
+  z-index:100;
 }
 
-.spacer {
+.feature-place {
+  padding: 218px 0px 0px 0px;
+  height: 300px;
+  background-image: url('../assets/img/mojave-offroad-thumb.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}
+
+.toolbar-spacer {
+  padding-top: 90px;
+}
+
+.aaa-brand-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../assets/img/12.jpeg');
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+}
+
+.aaa-brand {
   border: 2px solid yellow;
-  width: 100%;
-}
-
-.toolbar-phone {
-  color: #3d3d5c;
+  max-width: 95px;
+  margin: 10px;
 }
 
 .toolbar-brand {

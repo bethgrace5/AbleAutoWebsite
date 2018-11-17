@@ -2,6 +2,10 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~material-icons/css/material-icons.min.css';
 
+div.router-outlet {
+  padding-top: 90px;
+}
+
 p {
   color: #595959;
 }
@@ -199,10 +203,6 @@ div.feature-image.jasper {
 }
 
 
-div.router-outlet {
-  margin-top: 95px;
-}
-
 div.footer {
   padding: 50px;
   background-color: #E8E9E8;
@@ -282,8 +282,6 @@ div.footer h5 {
   }
   div.footer {
     padding: 30px;
-  }
-  div.router-outlet {
   }
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */

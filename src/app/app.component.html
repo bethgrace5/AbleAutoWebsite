@@ -1,36 +1,24 @@
 <mat-toolbar class="main-toolbar">
   <mat-toolbar-row>
-    <div class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
-      <img src="../assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair"/>
-    </div>
-  </mat-toolbar-row>
-  <mat-toolbar-row>
+      <div class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
+        <img src="../assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair"/>
+      </div>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-card>
-    <div class="action-button">
-      <button href="tel:+16616370669" mat-fab color="basic">
-        <mat-icon aria-label="">phone</mat-icon>
-      </button>
-      <br/>
-      CALL
-    </div>
-    <div>
-      <button href="tel:+16616370669" mat-fab color="basic">
-        <mat-icon aria-label="">phone</mat-icon>
-      </button>
-      <br/>
-      CALL
-    </div>
+<div class="toolbar-spacer">
+</div>
+
+<mat-card class="feature-place">
+  <span class="fill-space"></span>
+  <div class="aaa-brand-wrapper" (click)="isMenuCollapsed = true" routerLink="/dashboard">
+    <img src="../assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair"/>
+  </div>
 </mat-card>
 
-<mat-card>
-    <button mat-flat-button color="accent" routerLink="/appointment">
-      <mat-icon aria-label="">calendar_today</mat-icon>
-      Appointments
-    </button>
-</mat-card>
+
+<router-outlet (activate)='onActivate($event)'></router-outlet>
+
 
 <mat-card>
     <ul class="nav navbar-nav navbar-right">
@@ -39,11 +27,6 @@
       <li routerLinkActive="active"><a routerLink="/career">Careers</a></li>
     </ul>
 </mat-card>
-
-
-<div class="router-outlet">
-  <router-outlet (activate)='onActivate($event)'></router-outlet>
-</div>
 
 
 <div class="footer-top"></div>
