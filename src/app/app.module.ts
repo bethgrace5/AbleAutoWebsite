@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 import {
   MatButtonModule,
@@ -7,7 +9,8 @@ import {
   MatToolbarModule,
   MatIconModule,
   MatIconRegistry,
-  MatCardModule
+  MatCardModule,
+  MatDialogModule
 } from '@angular/material';
 
 
@@ -54,6 +57,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AlertModule.forRoot(),
     //DatepickerModule,
     //FormsModule,
@@ -64,7 +68,9 @@ const appRoutes: Routes = [
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    OverlayModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

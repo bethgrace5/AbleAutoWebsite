@@ -1,10 +1,41 @@
 <mat-toolbar class="main-toolbar">
-  <mat-toolbar-row>
-      <div class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
-        <img src="../assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair"/>
-      </div>
+  <mat-toolbar-row class="d-flex justify-content-between">
+    <div class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
+      <img src="../assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair"/>
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <!--<mat-icon>more_vert</mat-icon>-->
+      <mat-icon>menu</mat-icon>
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Redial</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Check voicemail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="subMenu">
+    <mat-icon>power</mat-icon>
+    Power
+  </button>
+</mat-menu>
+
+<mat-menu #subMenu="matMenu">
+  <button mat-menu-item>Shut down</button>
+  <button mat-menu-item>Restart</button>
+  <button mat-menu-item>Hibernate</button>
+</mat-menu>
+
+
 
 <div class="toolbar-spacer">
 </div>

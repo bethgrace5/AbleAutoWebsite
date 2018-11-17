@@ -1,6 +1,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 .main-toolbar {
-  padding: 30px 0 10px 0;
+  padding: 20px 0px;
   border-bottom: 2px solid #004080;
   position: fixed;
   z-index:100;
@@ -8,15 +9,22 @@
 
 .fill-space {
   flex: 1 1 auto;
+  flex-grow: 1;
+  border: 2px solid blue;
+  display: block;
 }
 
 .toolbar-spacer {
   padding-top: 90px;
 }
 
+.toolbar-cars {
+  max-width: 150px;
+  cursor: pointer;
+}
 
 .toolbar-brand {
-  max-width: 250px;
+  max-width: 200px;
   cursor: pointer;
 }
 

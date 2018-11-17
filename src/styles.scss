@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~material-icons/css/material-icons.min.css';
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
 
 div.router-outlet {
   padding-top: 90px;
