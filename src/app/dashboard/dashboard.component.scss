@@ -15,11 +15,15 @@
   //background-size: cover;
   //background-image: url('../../assets/img/12.jpeg');
   background-image: url('../../assets/img/bg01.png');
-  border-top: 4px solid #004080;
+  //border-top: 4px solid #004080;
 }
 
 .quilt-image {
   max-height: 250px;
+}
+
+.yp-image {
+  max-height: 100px;
 }
 
 .aaa-text {
@@ -46,7 +50,7 @@
 
 .action-card {
   padding: 5px 0px;
-  background-image: url('../../assets/img/bg01.png');
+  //background-image: url('../../assets/img/bg01.png');
   background-color: #3d3d8f;
   color: white;
 }
