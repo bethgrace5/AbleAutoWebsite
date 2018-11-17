@@ -1,8 +1,8 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 .main-toolbar {
-  padding: 20px 0px;
-  border-bottom: 2px solid #004080;
+  padding: 20px 0px 8px 0px;
+  border-bottom: 3px solid #004080;
   position: fixed;
   z-index:100;
 }
@@ -15,7 +15,7 @@
 }
 
 .toolbar-spacer {
-  padding-top: 90px;
+  padding-top: 80px;
 }
 
 .toolbar-cars {

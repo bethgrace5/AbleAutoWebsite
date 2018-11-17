@@ -10,28 +10,45 @@
 }
 
 .aaa-brand-wrapper {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('../../assets/img/12.jpeg');
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-image: url('../../assets/img/12.jpeg');
+  background-image: url('../../assets/img/bg01.png');
   border-top: 4px solid #004080;
-  border-bottom: 5px solid white;
+}
+
+.quilt-image {
+  max-height: 250px;
+}
+
+.aaa-text {
+  margin: 10px 8px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .aaa-brand {
   max-width: 95px;
-  margin: 10px 20px;;
+  margin: 20px;
 }
 
 .dark-card {
-  background-color: #3d3d8f;
-  height: 90px;
+  background-image: url('/assets/img/sect4.jpeg');
+}
+
+.triangle-card {
+  background-image: url('/assets/img/sect5.jpeg');
+}
+
+.shape-card {
+  background-image: url('/assets/img/sect2.jpeg');
 }
 
 .action-card {
-  border-top: 2px solid white;
   padding: 5px 0px;
   background-image: url('../../assets/img/bg01.png');
+  background-color: #3d3d8f;
+  color: white;
 }
 
 .feature-banner {
@@ -48,6 +65,7 @@
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .toolbar-phone {

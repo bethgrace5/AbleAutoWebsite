@@ -12,44 +12,41 @@
 
 <mat-menu #menu="matMenu">
   <button mat-menu-item>
-    <mat-icon>dialpad</mat-icon>
-    <span>Redial</span>
-  </button>
-  <button mat-menu-item disabled>
-    <mat-icon>voicemail</mat-icon>
-    <span>Check voicemail</span>
+    <mat-icon>phone</mat-icon>
+    <span class="text-uppercase">Call</span>
   </button>
   <button mat-menu-item>
-    <mat-icon>notifications_off</mat-icon>
-    <span>Disable alerts</span>
+    <mat-icon>directions</mat-icon>
+    <span class="text-uppercase">Directions</span>
   </button>
-  <button mat-menu-item [matMenuTriggerFor]="subMenu">
-    <mat-icon>power</mat-icon>
-    Power
+  <button mat-menu-item>
+    <mat-icon>calendar_today</mat-icon>
+    <span class="text-uppercase">Appointments</span>
+  </button>
+  <button mat-menu-item>
+    <span class="text-uppercase">Services</span>
+  </button>
+  <button mat-menu-item>
+    <span class="text-uppercase">Careers</span>
+  </button>
+  <button mat-menu-item>
+    <span class="text-uppercase">Reviews</span>
+  </button>
+  <button mat-menu-item>
+    <span class="text-uppercase">Warranty - 3 Year/36K Mile</span>
+  </button>
+  <button mat-menu-item>
+    <span class="text-uppercase">Financing Available</span>
+  </button>
+  <button mat-menu-item>
+    <span class="text-uppercase">About Us</span>
   </button>
 </mat-menu>
-
-<mat-menu #subMenu="matMenu">
-  <button mat-menu-item>Shut down</button>
-  <button mat-menu-item>Restart</button>
-  <button mat-menu-item>Hibernate</button>
-</mat-menu>
-
-
 
 <div class="toolbar-spacer">
 </div>
 
 <router-outlet (activate)='onActivate($event)'></router-outlet>
-
-<mat-card>
-    <ul class="nav navbar-nav navbar-right">
-      <li routerLinkActive="active"><a routerLink="/contact">Directions</a></li>
-      <li routerLinkActive="active"><a routerLink="/service">Services</a></li>
-      <li routerLinkActive="active"><a routerLink="/career">Careers</a></li>
-    </ul>
-</mat-card>
-
 
 <div class="footer-top"></div>
 <div class="footer">

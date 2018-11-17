@@ -1,11 +1,16 @@
 <mat-card class="feature-place">
 </mat-card>
 
-<div class="aaa-brand-wrapper" (click)="isMenuCollapsed = true" routerLink="/dashboard">
-  <img src="../assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair"/>
+<div class="d-flex flex-row aaa-brand-wrapper">
+  <div (click)="isMenuCollapsed = true" routerLink="/dashboard">
+    <img src="../assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair"/>
+  </div>
+  <div class="aaa-text text-center">
+    <strong>Locally Owned and Operated</strong><br/>
+    Serving the greater Bakersfield area since 1998
+  </div>
 </div>
 
-<span class="fill-space"></span>
 <mat-card class="action-card">
   <div class="d-flex justify-content-around">
     <div class="action-button-container">
@@ -35,140 +40,70 @@
   </div>
 </mat-card>
 
-
-<mat-card class="dark-card">
+<mat-card class="triangle-card">
+  <div class="d-flex">
+    <div class="aaa-text">
+      <strong>Honesty, Quality, Trust</strong><br/>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <img src="../assets/img/quilt.jpg" class="quilt-image img-fluid rounded" alt="Quilt"/>
+  </div>
+  <div class="d-flex">
+    <div class="aaa-text">
+      Emphasis on attention to detail to promote informed repair decisions.
+    <button mat-icon-button color="primary">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+    </div>
+  </div>
+  <!--<p>
+  In 2017 we decided to roll out tablets for use in our daily work. Upgrading from clipboards and cardstock to tablets has allowed us to make improvements to our current work process.
+  </p>
+  -->
 </mat-card>
 
-
-<div class="feature-section">
-  <ul>
-    <li>
-      <div class="fa fa-heart fa-2x feature-icon"></div>
-      <span class="feature-icon-text">
-        <strong>Family Owned and Operated</strong><br/>
-        Serving the greater Bakersfield area over 20 years
-      </span>
-    </li>
-    <li>
-      <div class="fa fa-heart fa-2x feature-icon"></div>
-      <span class="feature-icon-text">
-        <strong>Family Owned and Operated</strong><br/>
-        Serving the greater Bakersfield area over 20 years
-      </span>
-    </li>
-    <li>
-      <div class="fa fa-heart fa-2x feature-icon"></div>
-      <span class="feature-icon-text">
-        <strong>Family Owned and Operated</strong><br/>
-        Serving the greater Bakersfield area over 20 years
-      </span>
-    </li>
-  </ul>
-  <hr/>
-
-  <div class="row text-center">
-    <div class="col-xs-3">
-    </div>
-    <div class="col-xs-9">
+<mat-card class="dark-card">
+  <div class="d-flex">
+    <div class="aaa-text">
+      <strong>Latest Technology</strong><br/>
     </div>
   </div>
-
-  <div class="row text-center">
-    <div class="col-xs-3">
-      <div class="fa fa-gears fa-2x feature-icon"></div>
-    </div>
-    <div class="col-xs-9">
-      <span class="feature-icon-text">
-        <strong>Honesty, Quality, Trust</strong><br/>
-        Emphasis on attention to detail to promote informed repair decisions
-      </span>
-    </div>
+  <div class="d-flex justify-content-center">
+    <img src="../assets/img/green-toolbox.jpg" class="quilt-image img-fluid rounded" alt="Toolbox"/>
   </div>
-
-  <div class="row text-center">
-    <div class="col-xs-3">
-      <div class="fa fa-wrench fa-2x feature-icon"></div>
-    </div>
-    <div class="col-xs-9">
-      <span class="feature-icon-text">
-        <strong>Latest Technology</strong><br/>
-        ASE Certified Technicians are equiped with the latest technology
-      </span>
+  <div class="d-flex">
+    <div class="aaa-text">
+      ASE Certified Technicians are equiped with the latest technology
+    <button mat-icon-button color="primary">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
     </div>
   </div>
+</mat-card>
 
-</div>
-
-<div class="wordy-section">
-  <div class="row">
-    <div class="col-sm-4 col-xs-12">
-      <img style="max-width:200px; border:2px solid #e6e6e6; img-responsive" class="img img-responsive" src="./assets/img/green-toolbox.jpg">
-    </div>
-    <div class="col-sm-8 col-xs-12">
-      <h1>Now Equipped With New Technology</h1>
-      <br/>
-      <p>
-      In 2017 we decided to roll out tablets for use in our daily work. Upgrading from clipboards and cardstock to tablets has allowed us to make improvements to our current work process.
-      </p>
+<mat-card class="shape-card">
+  <div class="d-flex">
+    <div class="aaa-text">
+      <strong>Getting you back on the road with confidence</strong><br/>
     </div>
   </div>
-</div>
+  <div class="d-flex justify-content-center">
+    <img src="../assets/img/sunset-tire.jpg" class="quilt-image img-fluid rounded" alt="Sunset Tire"/>
+  </div>
+  <div class="d-flex">
+    <div class="aaa-text">
+      Our goal is to keep you up to date on preventative maintenance 
+      Our staff maintains their ASE certifications. 
+    <button mat-icon-button color="primary">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+    <!--for your vehicle to extend it's life and avoid major complications down the road. Our shop is held to AAA Automotive Repair Facility standards. We've received excellent customer satisfaction ratings that AAA performs to check up on us. Check out our other reviews on SureCritic, Yelp, Yellow Pages, Facebook, Google. SureCritic is an independent company that requests phone surveys from our customers. -->
+    </div>
+  </div>
+</mat-card>
 
-
-<div class="row dark-section">
-  <h1 class="text-center">A Few Vehicle Makes We Service</h1>
-  <div class="col-md-2 col-sm-3 col-xs-4">
-    <span class="dark-section-list">AMC</span><br/>
-    <span class="dark-section-list">Acura</span><br/>
-    <span class="dark-section-list">Buick</span><br/>
-    <span class="dark-section-list">Cadillac</span><br/>
-    <span class="dark-section-list">Chevrolet</span><br/>
-  </div>
-  <div class="col-md-2 col-sm-3 col-xs-4">
-    <span class="dark-section-list">Chrysler</span><br/>
-    <span class="dark-section-list">Daewoo</span><br/>
-    <span class="dark-section-list">Datsun</span><br/>
-    <span class="dark-section-list">Dodge</span><br/>
-    <span class="dark-section-list">Ford</span><br/>
-  </div>
-  <div class="col-md-2 col-sm-3 col-xs-4">
-    <span class="dark-section-list">GMC</span><br/>
-    <span class="dark-section-list">Honda</span><br/>
-    <span class="dark-section-list">Hummer</span><br/>
-    <span class="dark-section-list">Hyundai</span><br/>
-    <span class="dark-section-list">Infiniti</span><br/>
-  </div>
-  <div class="col-md-2 col-sm-3 col-xs-4">
-    <span class="dark-section-list">Isuzu</span><br/>
-    <span class="dark-section-list">Jeep</span><br/>
-    <span class="dark-section-list">Kia</span><br/>
-    <span class="dark-section-list">Lexus</span><br/>
-    <span class="dark-section-list">Lincoln</span><br/>
-  </div>
-  <div class="col-md-2 col-sm-3 col-xs-4">
-    <span class="dark-section-list">Mazda</span><br/>
-    <span class="dark-section-list">Mercury</span><br/>
-    <span class="dark-section-list">Mitsubishi</span><br/>
-    <span class="dark-section-list">Nissan</span><br/>
-    <span class="dark-section-list">Oldsmobile</span><br/>
-  </div>
-  <div class="col-md-2 col-sm-3 col-xs-4">
-    <span class="dark-section-list">Plymouth</span><br/>
-    <span class="dark-section-list">Pontiac</span><br/>
-    <span class="dark-section-list">Saturn</span><br/>
-    <span class="dark-section-list">Scion</span><br/>
-    <span class="dark-section-list">Subaru</span><br/>
-    <span class="dark-section-list">Suzuki</span><br/>
-    <span class="dark-section-list">Toyota</span><br/>
-  </div>
-  <div class="col-xs-12">
-    <a class="btn btn-lg btn-info" style="background-color: #1a75ff" routerLink="/service">
-        Services
-    </a>
-  </div>
-</div>
-
-<div class="feature-section-1">
+<!--<div class="feature-section-1">
   <div class="row text-center">
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="feature-image aaa"></div>
@@ -185,7 +120,7 @@
     <div class="col-md-3 col-sm-6 col-xs-12">
       <div class="feature-image tech-net"></div>
       <p class="feature-image-text">
-      Tech Net 24 Month/24,000 Mile Nationwide Warranty
+      Tech Net 3 Year/36,000 Mile Warranty
       </p>
     </div>
     <div class="col-md-3 col-sm-6 col-xs-12">
@@ -196,38 +131,7 @@
     </div>
   </div>
 </div>
-
-<!--
-<div class="wordy-section">
-  <div class="row">
-    <div class="col-sm-8">
-      <img style="border:2px solid #e6e6e6; border-radius: 20px;" class="img img-responsive" src="./assets/img/20.jpg">
-      <p>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-      </p>
-      <p>
-      Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-      </p>
-  </div>
-</div>
 -->
-
-<div class="wordy-section">
-  <div class="row">
-    <div class="col-sm-8">
-      <h1>Getting you back on the road with confidence</h1>
-      <p>
-      We use high quality parts for each repair. Our staff maintains their ASE certifications. Our goal is to keep you up to date on preventative maintenance for your vehicle to extend it's life and avoid major complications down the road. Our shop is held to AAA Automotive Repair Facility standards. We've received excellent customer satisfaction ratings that AAA performs to check up on us. Check out our other reviews on SureCritic, Yelp, Yellow Pages, Facebook, Google. SureCritic is an independent company that requests phone surveys from our customers. 
-      We're so thankful that so many of you take the time to respond to them, and have given us excellent reviews!
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <img style="max-width:200px; border:2px solid #e6e6e6; img-responsive" class="img img-responsive" src="./assets/img/sunset-tire.jpg">
-
-    </div>
-  </div>
-</div>
-
 
 <!--
 <div class="feature-section">
@@ -256,9 +160,3 @@
       </div>
     </div>
     -->
-
-
-
-  <router-outlet></router-outlet>
-
-
