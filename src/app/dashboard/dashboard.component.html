@@ -106,10 +106,10 @@
     <h5>3 Years / 36,000 Miles</h5>
     <h6>Nationwide warranty</h6>
     <p>Service available from ANY shop in the network</p>
-  <button mat-button color="primary">
-    DETAILS
-    <mat-icon>keyboard_arrow_right</mat-icon>
-  </button>
+		<button mat-button color="primary">
+			SEE DETAILS
+			<mat-icon>keyboard_arrow_right</mat-icon>
+		</button>
   </div>
 </div>
 
@@ -130,18 +130,44 @@
   </mat-card-actions>
 </mat-card>
 
-<mat-card class="basic-card">
+<mat-card class="dark-card">
   <mat-card-header>
-    <h5 class="aaa-text">Don't Just Take Our Word</h5>
+    <h5 class="dark-card-text">Don't Just Take Our Word</h5>
   </mat-card-header>
   <img mat-card-image src="../assets/img/yellowPage.png" class="yp-image" alt="Quilt"/>
-  <mat-card-content class="aaa-text">
+  <mat-card-content class="dark-card-text">
     <p><strong>Our customers love us!</strong></p>
     <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button color="primary">
+    <button mat-raised-button color="accent">
       READ MORE
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
+
+<div class="d-flex flex-wrap flex-row">
+<mat-card class="basic-card">
+  <mat-card-header>
+    <h4 class="aaa-text">
+			Fellow Kern County Residents
+		</h4>
+  </mat-card-header>
+  <img mat-card-image src="../assets/img/rrc.jpg" alt="Kern County"/>
+  <mat-card-content class="aaa-text">
+    <h5>What preventative maintenace should we be paying extra attention to?</h5>
+    <p><strong>It may sound counter intuitive,</strong> but some vehicle parts such as belts and hoses are meant to wear out over time. They are built to be soft and pliable so they can do their job properly. As such, they must be replaced every so often.</p>
+		<div class="box">
+			<p><strong>Preventative maintenance</strong> aims to fix key vehicle parts so we don't have to about fixing more expensive vehicle parts.</p>
+		</div>
+    <p>Here in Kern County, we are a desert community. Summers are hot, often going many days above 100degrees F, and winters, thout not snowy, are very cold.</p>
+    <p>But hey, we can't all live in San Diego, can we?</p>
+    <p>What does all of this mean in terms of vehicle maintenace? What extra parts should we be looking at or having a qualified professional inspect from time to time?</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent">
+      LET'S TAKE A LOOK
       <mat-icon>keyboard_arrow_right</mat-icon>
     </button>
   </mat-card-actions>

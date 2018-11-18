@@ -11,6 +11,14 @@
     background-image: url('/assets/img/sect5.jpeg');
   }
 
+.dark-card {
+  min-width: 300px;
+  max-width: 400px;
+  color: white;
+  background-color: #3d3d8f;
+  border: 2px solid #cccccc;
+}
+
 .feature-place {
   padding: 216px 0px 0px 0px;
   height: 245px;
@@ -24,12 +32,20 @@
   max-height: 250px;
 }
 .warranty-brand-wrapper {
+	padding: 10px 0;
   //background-position: center;
   //background-repeat: no-repeat;
   //background-size: cover;
   //background-image: url('../../assets/img/12.jpeg');
   background-image: url('../../assets/img/bg01.png');
   //border-top: 4px solid #004080;
+}
+
+.box {
+	border: 2px solid #cccccc;
+  margin: 10px;
+  padding: 20px;
+	background-color: #ffffe6;
 }
 
 
@@ -39,8 +55,8 @@
 }
 
 .warranty-brand {
-  margin: 25px 10px;
-  max-width: 145px;
+	padding-top: 30px;
+  max-width: 225px;
 }
 
 .aaa-brand-wrapper {
@@ -58,17 +74,18 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.dark-card-text,
+.dark-card-text p {
+	color: white;
+  margin: 10px 8px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 .aaa-brand {
   max-width: 105px;
   margin: 20px;
 }
 
-.dark-card {
-  max-width: 500px;
-  border: 2px solid blue;
-  min-width: 300px;
-  background-image: url('/assets/img/sect4.jpeg');
-}
 
 .shape-card {
   border: 2px solid red;
