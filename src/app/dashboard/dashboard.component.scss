@@ -1,14 +1,15 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-.example-card {
+.basic-card {
     min-width: 300px;
     max-width: 400px;
-  background-image: url('/assets/img/sect5.jpeg');
+    background-image: url('/assets/img/bg01.png');
   }
 
-  .example-header-image {
-      background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-        background-size: cover;
-      }
+.triangle-card {
+    min-width: 300px;
+    max-width: 400px;
+    background-image: url('/assets/img/sect5.jpeg');
+  }
 
 .feature-place {
   padding: 216px 0px 0px 0px;
@@ -19,7 +20,10 @@
   background-size: cover;
 }
 
-.aaa-brand-wrapper {
+.quilt-image {
+  max-height: 250px;
+}
+.warranty-brand-wrapper {
   //background-position: center;
   //background-repeat: no-repeat;
   //background-size: cover;
@@ -28,8 +32,24 @@
   //border-top: 4px solid #004080;
 }
 
-.quilt-image {
-  max-height: 250px;
+
+.warranty-text {
+  margin: 10px 8px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.warranty-brand {
+  margin: 25px 10px;
+  max-width: 145px;
+}
+
+.aaa-brand-wrapper {
+  //background-position: center;
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-image: url('../../assets/img/12.jpeg');
+  background-image: url('../../assets/img/bg01.png');
+  //border-top: 4px solid #004080;
 }
 
 
@@ -48,13 +68,6 @@
   border: 2px solid blue;
   min-width: 300px;
   background-image: url('/assets/img/sect4.jpeg');
-}
-
-.triangle-card {
-  border: 2px solid green;
-  max-width: 500px;
-  min-width: 300px;
-  background-image: url('/assets/img/sect5.jpeg');
 }
 
 .shape-card {
