@@ -1,27 +1,93 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 .basic-card {
-    min-width: 300px;
-    max-width: 400px;
-    background-image: url('/assets/img/bg01.png');
-  }
+}
+.basic-card h1,
+.basic-card h2,
+.basic-card h3,
+.basic-card h4,
+.basic-card h5,
+.basic-card h6,
+.basic-card p,
+.basic-card span,
+.basic-card strong
+{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.limited-width-card {
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.action-card {
+  background-color: #3d3d8f;
+  color: white;
+}
+.action-card span {
+  margin-top: 5px;
+  display: block;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.blank-card-1 {
+  background-image: url('../../assets/img/bg01.png');
+  background-repeat: repeat;
+}
+.blank-card-2 {
+  background-image: url('../../assets/img/bg02.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blank-card-3 {
+  background-image: url('../../assets/img/bg03.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.triangle-card {
+  background-image: url('/assets/img/sect5.jpeg');
+  background-repeat: repeat;
+}
+.dark-card {
+  color: white;
+  background-color: #3d3d8f;
+  border: 2px solid #cccccc;
+}
+.dark-card h5, 
+.dark-card p {
+	color: white;
+  margin: 10px 8px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.aaa-brand {
+  max-width: 100px;
+  min-width: 90px;
+}
+.warranty-brand {
+  padding: 10px 30px;
+}
+
+img.mat-card-image.caption-image {
+  margin-bottom: 0
+}
+.caption {
+  padding: 3px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 2px;
+  text-align: right;
+  font-style: italic;
+ }
 
 .promo-button {
 	padding-left: 25px;
 	padding-right: 25px;
-}
-
-.triangle-card {
-    min-width: 300px;
-    max-width: 400px;
-    background-image: url('/assets/img/sect5.jpeg');
-  }
-
-.dark-card {
-  min-width: 300px;
-  max-width: 400px;
-  color: white;
-  background-color: #3d3d8f;
-  border: 2px solid #cccccc;
 }
 
 .feature-place {
@@ -33,101 +99,11 @@
   background-size: cover;
 }
 
-.quilt-image {
-  max-height: 250px;
-}
-
-.warranty-brand-wrapper {
-  min-width: 300px;
-  max-width: 400px;
-	padding: 10px 0;
-  //background-position: center;
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-image: url('../../assets/img/12.jpeg');
-  background-image: url('../../assets/img/bg01.png');
-  //border-top: 4px solid #004080;
-}
-
-.box {
+.definition-box {
 	border: 2px solid #cccccc;
   margin: 10px;
   padding: 20px;
 	background-color: #ffffe6;
-}
-
-
-.warranty-text {
-  margin: 10px 8px;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.warranty-brand {
-	padding-top: 30px;
-  max-width: 225px;
-}
-
-.aaa-brand-wrapper {
-  //background-position: center;
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //background-image: url('../../assets/img/12.jpeg');
-  background-image: url('../../assets/img/bg01.png');
-  //border-top: 4px solid #004080;
-}
-
-
-.aaa-text {
-  margin: 10px 8px;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.dark-card-text,
-.dark-card-text p {
-	color: white;
-  margin: 10px 8px;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.aaa-brand {
-  max-width: 105px;
-  margin: 20px;
-}
-
-
-.shape-card {
-  border: 2px solid red;
-  max-width: 500px;
-  min-width: 300px;
-  background-image: url('/assets/img/sect2.jpeg');
-}
-
-.action-card {
-  padding: 10px 0px;
-  //background-image: url('../../assets/img/bg01.png');
-  background-color: #3d3d8f;
-  color: white;
-}
-
-.feature-banner {
-  max-height: 360px;
-  width: 100%;
-}
-
-.action-button-text {
-  margin-top: 5px;
-  display: block;
-}
-
-.action-button-container {
-  padding: 10px 15px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-.toolbar-phone {
-  color: #3d3d5c;
 }
 
 /* =================== 2. Large Devices, Wide Screens ======================= */
@@ -135,15 +111,27 @@
 }
 /* =================== 3. Medium Devices, Desktops ========================== */
 @media only screen and (max-width : 992px) {
+.warranty-brand {
+  padding: 0px 20px;
+}
 }
 /* =================== 4.  Small Devices, Tablets =========================== */
 @media only screen and (max-width : 768px) {
+.warranty-brand {
+  padding: 0px 20px;
+}
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */
 @media only screen and (max-width : 480px) {
+.warranty-brand {
+  padding: 30px 10px 5px 5px;
+}
 }
 /* =================== 6.  Custom, iPhone Retina ============================ */
 @media only screen and (max-width : 320px) {
+.warranty-brand {
+  padding: 40px 5px 5px 5px;
+}
 }
 
 /* REMOVE PARALLAX IE10+ CSS */

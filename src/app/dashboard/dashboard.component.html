@@ -1,237 +1,243 @@
 <mat-card class="feature-place">
 </mat-card>
 
-<div class="d-flex flex-row aaa-brand-wrapper">
-  <div routerLink="/dashboard">
-    <img src="../assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair"/>
-  </div>
-  <div class="aaa-text text-center">
-    <h5>Locally Owned and Operated</h5>
-    Serving the greater Bakersfield area <strong>Since <i>1998</i></strong>
-  </div>
-</div>
-
-
-<mat-card class="action-card">
-  <div class="d-flex justify-content-center">
-    <div class="action-button-container">
-      <button href="tel:+16616370669" mat-fab color="basic">
-        <mat-icon aria-label="">phone</mat-icon>
-      </button>
-      <span class="action-button-text">
-        call
-      </span>
-    </div>
-    <div class="action-button-container">
-      <button href="tel:+16616370669" mat-fab color="basic">
-        <mat-icon aria-label="">directions</mat-icon>
-      </button>
-      <span class="action-button-text">
-        directions
-      </span>
-    </div>
-    <div class="action-button-container">
-      <button mat-fab color="accent" routerLink="/appointment">
-        <mat-icon aria-label="">calendar_today</mat-icon>
-      </button>
-      <span class="action-button-text">
-        book
-      </span>
-    </div>
-  </div>
-</mat-card>
-
 <div class="d-flex flex-wrap flex-row">
-<mat-card class="basic-card">
-  <mat-card-header>
-    <h4 class="aaa-text">While You Work, We Are Able</h4>
-  </mat-card-header>
-  <img mat-card-image src="../assets/img/work1.jpg" alt="Quilt"/>
-  <mat-card-content class="aaa-text">
-    <p><strong>How Does It Work?</strong></p>
-    <p>We will pick up your vehicle from your work or home for service and deliver it at your convenience!</p>
-    <p>Currently, limited available slots! Schedule your appointment today!</p>
-  <mat-card-actions class="d-flex justify-content-around">
-    <button mat-raised-button class="promo-button" color="basic">
-      <mat-icon>phone</mat-icon>
-      CALL
-    </button>
-    <button mat-raised-button class="promo-button" color="primary">
-      <mat-icon>calendar_today</mat-icon>
-      BOOK
-    </button>
-  </mat-card-actions>
-  </mat-card-content>
-</mat-card>
+  <mat-card class="flex-grow-1 basic-card blank-card-1">
+    <mat-card-content>
+      <div class="warranty-brand-wrapper">
+        <div class="d-flex flex-row">
+          <div routerLink="/dashboard">
+            <img src="../assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair"/>
+          </div>
+          <div class="text-center">
+            <h5>Locally Owned and Operated</h5>
+            <span>Serving the greater Bakersfield area</span>
+            <br/>
+            <span><strong>Since <i>1998</i></strong></span>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
 
-<mat-card class="triangle-card">
-  <mat-card-header>
-    <h5 class="aaa-text">Honesty, Quality, Trust</h5>
-  </mat-card-header>
-  <img mat-card-image src="../assets/img/quilt.jpg" alt="Quilt"/>
-  <mat-card-content class="aaa-text">
-    <p>No surprises. No pressure. Ever</p>
-    <p>We put emphasis on attention to detail to help promote your repair decisions upfront</p>
-    <p><strong>Expect safety, prevention, and your best interests</strong></p>
-  <mat-card-actions>
-    <button mat-button color="primary">
-      READ MORE
-      <mat-icon>keyboard_arrow_right</mat-icon>
-    </button>
-  </mat-card-actions>
-  </mat-card-content>
-</mat-card>
 
-<mat-card class="basic-card">
-  <mat-card-header>
-    <h5 class="aaa-text">Latest Technology</h5>
-  </mat-card-header>
-  <img mat-card-image src="../assets/img/green-toolbox.jpg" alt="Quilt"/>
-  <mat-card-content class="aaa-text">
-    <p>Our ASE Certified Technicians are now equiped with the latest technology</p>
-  <mat-card-actions>
-    <button mat-button color="primary">
-      READ MORE
-      <mat-icon>keyboard_arrow_right</mat-icon>
-    </button>
-  </mat-card-actions>
-  </mat-card-content>
-</mat-card>
+  <mat-card class="flex-grow-1 basic-card action-card">
+    <div class="d-flex justify-content-center">
+      <div class="text-center">
+        <button href="tel:+16616370669" mat-fab color="basic">
+          <mat-icon aria-label="call">phone</mat-icon>
+        </button>
+        <span>call</span>
+      </div>
+      <div class="text-center">
+        <button href="tel:+16616370669" mat-fab color="basic">
+          <mat-icon aria-label="directions">directions</mat-icon>
+        </button>
+        <span>directions</span>
+      </div>
+      <div class="text-center">
+        <button mat-fab color="accent" routerLink="/appointment">
+          <mat-icon aria-label="book appointment">calendar_today</mat-icon>
+        </button>
+        <span>book</span>
+      </div>
+    </div>
+  </mat-card>
 
-<div class="d-flex flex-row warranty-brand-wrapper">
-  <div routerLink="/dashboard">
-    <img src="../assets/img/nationwide.jpg" class="warranty-brand img-fluid" alt="Nationwide Warranty"/>
-  </div>
-  <div class="warranty-text text-center">
-    <h5>3 Years / 36,000 Miles</h5>
-    <h6>Nationwide warranty</h6>
-    <p>Service available from ANY shop in the network</p>
-		<button mat-button color="primary">
-			SEE DETAILS
-			<mat-icon>keyboard_arrow_right</mat-icon>
-		</button>
-  </div>
+  <mat-card class="flex-grow-1 basic-card blank-card-3">
+    <mat-card-content>
+      <div>
+        <div class="d-flex flex-row justify-content-center">
+          <div routerLink="/dashboard">
+            <img src="../assets/img/nationwide.jpg" class="warranty-brand img-fluid" alt="Nationwide Warranty"/>
+          </div>
+          <div class="text-center">
+            <h5>3 Years / 36,000 Miles</h5>
+            <h6>Nationwide warranty</h6>
+            <p>Service available from ANY shop in the network</p>
+            <button mat-button color="primary">
+              SEE DETAILS
+              <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
 </div>
-
-<mat-card class="triangle-card">
-  <mat-card-header>
-    <h5 class="aaa-text">Confidence on The Road</h5>
-  </mat-card-header>
-  <img mat-card-image src="../assets/img/sunset-tire.jpg" alt="Quilt"/>
-  <mat-card-content class="aaa-text">
-    <p><strong>Our goal is to keep your vehicle up to date on preventative maintenance</strong></p>
-    <p>Our 3 Years / 36,000 Miles Warranty provides extra assurance to cover you anywhere in the nation</p>
-  <mat-card-actions>
-    <button mat-button color="primary">
-      READ MORE
-      <mat-icon>keyboard_arrow_right</mat-icon>
-    </button>
-  </mat-card-actions>
-  </mat-card-content>
-</mat-card>
-
-<mat-card class="dark-card">
-  <mat-card-header>
-    <h5 class="dark-card-text">Don't Just Take Our Word!</h5>
-  </mat-card-header>
-  <img mat-card-image src="../assets/img/yellowPage.png" class="yp-image" alt="Quilt"/>
-  <mat-card-content class="dark-card-text">
-    <p><strong>Our customers love us!</strong></p>
-    <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
-  <mat-card-actions>
-    <button mat-raised-button color="accent">
-      MORE REVIEWS
-      <mat-icon>keyboard_arrow_right</mat-icon>
-    </button>
-  </mat-card-actions>
-  </mat-card-content>
-</mat-card>
-
 <div class="d-flex flex-wrap flex-row">
-<mat-card class="basic-card">
-  <mat-card-header>
-    <h4 class="aaa-text">
-			Fellow Kern County Residents
-		</h4>
-  </mat-card-header>
-  <img mat-card-image src="../assets/img/rrc.jpg" alt="Kern County"/>
-  <mat-card-content class="aaa-text">
-    <h5>What Preventative Maintenace Should We Be Concerned About?</h5>
-    <p><strong>It may sound counter intuitive,</strong> but some vehicle parts such as belts and hoses are meant to wear out over time. They are built to be soft and pliable so they can do their job properly. As such, they must be replaced every so often.</p>
-		<div class="box">
-			<p><strong>Preventative maintenance</strong> aims to fix key vehicle parts so we don't have to about fixing more expensive vehicle parts.</p>
-		</div>
-    <p>Here in Kern County, we are a desert community. Summers are hot, often going many days above 100degrees F, and winters, thout not snowy, are very cold.</p>
-    <p>But hey, we can't all live in San Diego, can we?</p>
-    <p>What does all of this mean in terms of vehicle maintenace? What extra parts should we be looking at or having a qualified professional inspect from time to time?</p>
-  <mat-card-actions>
-    <button mat-raised-button color="accent">
-      LET'S TAKE A LOOK
-      <mat-icon>keyboard_arrow_right</mat-icon>
-    </button>
-  </mat-card-actions>
-  </mat-card-content>
-</mat-card>
+  <mat-card class="basic-card limited-width-card blank-card-1">
+    <mat-card-header>
+      <h4>While You Work, We Are Able</h4>
+    </mat-card-header>
+    <img mat-card-image src="../assets/img/work1.jpg" alt="Work Desk"/>
+    <mat-card-content>
+      <p><strong>How Does It Work?</strong></p>
+      <p>We will pick up your vehicle from your work or home for service and deliver it at your convenience!</p>
+      <p>Currently, limited available slots! Schedule your appointment today!</p>
+      <mat-card-actions class="d-flex justify-content-around">
+        <button mat-raised-button class="promo-button" color="basic">
+          <mat-icon>phone</mat-icon>
+          CALL
+        </button>
+        <button mat-raised-button class="promo-button" color="primary">
+          <mat-icon>calendar_today</mat-icon>
+          BOOK
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
 
+  <mat-card class="basic-card limited-width-card triangle-card">
+    <mat-card-header>
+      <h4>Honesty, Quality, Trust</h4>
+    </mat-card-header>
+    <img mat-card-image class="caption-image" src="../assets/img/quilt.jpg" alt="Quilt"/>
+    <p class="caption">Kern River Blue Star Moms Present "Patriotic Quilt" Raffle Prize</p>
+    <mat-card-content class="aaa-text">
+      <p>No surprises. No pressure. Ever</p>
+      <p>We put emphasis on attention to detail to help promote your repair decisions upfront</p>
+      <p><strong>Expect safety, prevention, and your best interests</strong></p>
+      <mat-card-actions>
+        <button mat-button color="primary">
+          READ MORE
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
 
+  <mat-card class="basic-card limited-width-card blank-card-1">
+    <mat-card-header>
+      <h4>Latest Technology</h4>
+    </mat-card-header>
+    <img mat-card-image class="caption-image" src="../assets/img/green-toolbox.jpg" alt="Toolbox"/>
+    <p class="caption">Trading Up From Clipboards and Cardstock To Tablets and Tech</p>
+    <mat-card-content class="aaa-text">
+      <p>Our ASE Certified Technicians are now equiped with the latest technology</p>
+      <p>The upgrade was not easy, but well worth the journey</p>
+      <mat-card-actions>
+        <button mat-button color="primary">
+          READ MORE
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
 
+  <mat-card class="basic-card limited-width-card triangle-card">
+    <mat-card-header>
+      <h4>Confidence on The Road</h4>
+    </mat-card-header>
+    <img mat-card-image src="../assets/img/sunset-tire.jpg" alt="Sunset Tire"/>
+    <mat-card-content>
+      <p><strong>Our goal is to keep your vehicle up to date on preventative maintenance</strong></p>
+      <p>Our 3 Years / 36,000 Miles Warranty provides extra assurance to cover you anywhere in the nation</p>
+      <mat-card-actions>
+        <button mat-button color="primary">
+          READ MORE
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
 
-</div>
+  <mat-card class="basic-card limited-width-card dark-card">
+    <mat-card-header>
+      <h4>Don't Just Take Our Word!</h4>
+    </mat-card-header>
+    <img mat-card-image src="../assets/img/yellowPage.png" class="yp-image" alt="Yellow Pages Review"/>
+    <mat-card-content>
+      <p><strong>Our customers love us!</strong></p>
+      <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
+      <mat-card-actions>
+        <button mat-raised-button color="accent">
+          MORE REVIEWS
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
 
-<!--<div class="feature-section-1">
-  <div class="row text-center">
-    <div class="col-md-3 col-sm-6 col-xs-12">
-      <div class="feature-image aaa"></div>
-      <p class="feature-image-text">
-      AAA Approved Auto Repair facility
-      </p>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
-      <div class="feature-image ase"></div>
-      <p class="feature-image-text">
-      ASE Certified Technicians
-      </p>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
-      <div class="feature-image tech-net"></div>
-      <p class="feature-image-text">
-      Tech Net 3 Year/36,000 Mile Warranty
-      </p>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12">
-      <div class="feature-image toyourrescue"></div>
-      <p class="feature-image-text">
-      $25 (or more) purchase covers you for 365 days for road side assistance
-      </p>
-    </div>
+    <mat-card class="basic-card limited-width-card blank-card-1">
+      <mat-card-header>
+        <h4>Fellow Kern County Residents</h4>
+      </mat-card-header>
+      <img mat-card-image src="../assets/img/rrc.jpg" alt="Kern County"/>
+      <mat-card-content>
+        <h5>What Preventative Maintenace Should We Be Concerned About?</h5>
+        <p><strong>It may sound counter intuitive,</strong> but some vehicle parts such as belts and hoses are meant to wear out over time. They are built to be soft and pliable so they can do their job properly. As such, they must be replaced every so often.</p>
+        <div class="definition-box">
+          <p><strong>Preventative maintenance</strong> aims to fix key vehicle parts so we don't have to about fixing more expensive vehicle parts.</p>
+        </div>
+        <p>Here in Kern County, we are a desert community. Summers are hot, often going many days above 100degrees F, and winters, thout not snowy, are very cold.</p>
+        <p>But hey, we can't all live in San Diego, can we?</p>
+        <p>What does all of this mean in terms of vehicle maintenace? What extra parts should we be looking at or having a qualified professional inspect from time to time?</p>
+        <mat-card-actions>
+          <button mat-raised-button color="accent">
+            LET'S TAKE A LOOK
+            <mat-icon>keyboard_arrow_right</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
   </div>
-</div>
--->
 
-<!--
-<div class="feature-section">
-  <div class="row text-center">
+  <!--<div class="feature-section-1">
+    <div class="row text-center">
+    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="feature-image aaa"></div>
+    <p class="feature-image-text">
+    AAA Approved Auto Repair facility
+    </p>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="feature-image ase"></div>
+    <p class="feature-image-text">
+    ASE Certified Technicians
+    </p>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="feature-image tech-net"></div>
+    <p class="feature-image-text">
+    Tech Net 3 Year/36,000 Mile Warranty
+    </p>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="feature-image toyourrescue"></div>
+    <p class="feature-image-text">
+    $25 (or more) purchase covers you for 365 days for road side assistance
+    </p>
+    </div>
+    </div>
+    </div>
+  -->
+
+  <!--
+    <div class="feature-section">
+    <div class="row text-center">
     <div class="col-md-4 col-sm-6 col-xs-12">
-      <div class="feature-image jasper"></div>
-      <p>
-      3 year/100,000 mile warranty on gas engines, transmissions and differentials
-      </p>
+    <div class="feature-image jasper"></div>
+    <p>
+    3 year/100,000 mile warranty on gas engines, transmissions and differentials
+    </p>
     </div>
     <div class="col-md-4 col-sm-6 col-xs-12">
-      <div class="feature-image carquest"></div>
-      <p>
-      Quality auto parts
-      </p>
+    <div class="feature-image carquest"></div>
+    <p>
+    Quality auto parts
+    </p>
     </div>
-  </div>
+    </div>
 
     <div class="row text-center">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <iframe id="myIframe" src="//www.surecritic.com/businesses/2441/widgets/dynamic_reviews/7459" height="355" width="500" frameBorder="0"></iframe> 
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-      </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+    <iframe id="myIframe" src="//www.surecritic.com/businesses/2441/widgets/dynamic_reviews/7459" height="355" width="500" frameBorder="0"></iframe> 
     </div>
-    -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+    </div>
+    </div>
+  -->
