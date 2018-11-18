@@ -5,6 +5,11 @@
     background-image: url('/assets/img/bg01.png');
   }
 
+.promo-button {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 .triangle-card {
     min-width: 300px;
     max-width: 400px;
@@ -31,7 +36,10 @@
 .quilt-image {
   max-height: 250px;
 }
+
 .warranty-brand-wrapper {
+  min-width: 300px;
+  max-width: 400px;
 	padding: 10px 0;
   //background-position: center;
   //background-repeat: no-repeat;
