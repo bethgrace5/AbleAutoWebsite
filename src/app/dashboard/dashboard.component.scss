@@ -1,8 +1,18 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.example-card {
+    min-width: 300px;
+    max-width: 400px;
+  background-image: url('/assets/img/sect5.jpeg');
+  }
+
+  .example-header-image {
+      background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+        background-size: cover;
+      }
 
 .feature-place {
   padding: 216px 0px 0px 0px;
-  height: 250px;
+  height: 245px;
   background-image: url('../../assets/img/mojave-offroad-thumb.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -22,9 +32,6 @@
   max-height: 250px;
 }
 
-.yp-image {
-  max-height: 100px;
-}
 
 .aaa-text {
   margin: 10px 8px;
@@ -32,24 +39,33 @@
 }
 
 .aaa-brand {
-  max-width: 95px;
+  max-width: 105px;
   margin: 20px;
 }
 
 .dark-card {
+  max-width: 500px;
+  border: 2px solid blue;
+  min-width: 300px;
   background-image: url('/assets/img/sect4.jpeg');
 }
 
 .triangle-card {
+  border: 2px solid green;
+  max-width: 500px;
+  min-width: 300px;
   background-image: url('/assets/img/sect5.jpeg');
 }
 
 .shape-card {
+  border: 2px solid red;
+  max-width: 500px;
+  min-width: 300px;
   background-image: url('/assets/img/sect2.jpeg');
 }
 
 .action-card {
-  padding: 5px 0px;
+  padding: 10px 0px;
   //background-image: url('../../assets/img/bg01.png');
   background-color: #3d3d8f;
   color: white;
@@ -66,7 +82,7 @@
 }
 
 .action-button-container {
-  padding: 10px;
+  padding: 10px 15px;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Nunito Sans', sans-serif;
