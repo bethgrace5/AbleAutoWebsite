@@ -5,7 +5,7 @@
   "projects": {
     "angular-seed": {
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "src/app",
       "projectType": "application",
       "architect": {
         "build": {
@@ -101,7 +101,7 @@
     },
     "angular-seed-e2e": {
       "root": "",
-      "sourceRoot": "e2e",
+      "sourceRoot": "src/app",
       "projectType": "application",
       "architect": {
         "e2e": {

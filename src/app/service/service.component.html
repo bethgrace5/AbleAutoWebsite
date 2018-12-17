@@ -1,20 +1,16 @@
-<div class="feature-section">
+<div *ngFor="let service of services">
+
+  <app-service-card 
+     [title]="service.title"
+     [subtitle]="service.subtitle"
+     [description]="service.description">
+  </app-service-card>
+
+</div>
+  <!--
   <div class="row">
     <div class="col-xs-12">
       <div>
-
-        <!--
-        <span class="fa fa-gears fa-2x hidden-xs"></span>
-        <span class="fa fa-cog fa-2x hidden-xs"></span>
-
-        <div class="visible-xs">
-          <span class="fa fa-2x fa-gears"></span>
-          <span class="fa fa-2x fa-cog"></span>
-          <span class="fa fa-2x fa-wrench"></span>
-        </div>
-        <hr class="visible-xs"/>
-        -->
-
         <h2>There are 3 categories vehicle maintenance</h2>
 
         <h3>
@@ -62,7 +58,6 @@
         For example, John landed an amazing job, and is moving quite aways for work, she wants to make sure her truck will be able to tow a sizeable load for a few hundred miles.
         </p>
 
-        <!--
          Misconception: All Auto repair shops are dishonest
 
          Misconception: All Auto repair shops over charge, or make up problems
@@ -78,14 +73,7 @@
 
          differential tutorial
 
-        -->
 
-
-        <!--
-        <br class="visible-xs"/>
-        <span class="fa fa-2x fa-cog hidden-xs"></span>
-        <span class="fa fa-2x fa-gears hidden-xs"></span>
-        -->
       </div>
     </div>
   </div>
@@ -124,6 +112,4 @@
     </div>
   </div>
 </div>
-
-
-
+-->

@@ -7,53 +7,48 @@
       <!--<mat-icon>more_vert</mat-icon>-->
       <mat-icon>menu</mat-icon>
     </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item> <mat-icon>phone</mat-icon> <span class="text-uppercase">Call</span> </button>
+      <button mat-menu-item> <mat-icon>directions</mat-icon> <span class="text-uppercase">Directions</span> </button>
+      <button mat-menu-item> <mat-icon>calendar_today</mat-icon> <span class="text-uppercase">Appointments</span> </button>
+      <button mat-menu-item routerLink="/service"> <span class="text-uppercase">Services</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">Careers</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">Reviews</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">Financing Available</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">About Us</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">How Does The Service Work?</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">What To Expect</span> </button>
+    </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>
-    <mat-icon>phone</mat-icon>
-    <span class="text-uppercase">Call</span>
-  </button>
-  <button mat-menu-item>
-    <mat-icon>directions</mat-icon>
-    <span class="text-uppercase">Directions</span>
-  </button>
-  <button mat-menu-item>
-    <mat-icon>calendar_today</mat-icon>
-    <span class="text-uppercase">Appointments</span>
-  </button>
-  <button mat-menu-item>
-    <span class="text-uppercase">Services</span>
-  </button>
-  <button mat-menu-item>
-    <span class="text-uppercase">Careers</span>
-  </button>
-  <button mat-menu-item>
-    <span class="text-uppercase">Reviews</span>
-  </button>
-  <button mat-menu-item>
-    <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span>
-  </button>
-  <button mat-menu-item>
-    <span class="text-uppercase">Financing Available</span>
-  </button>
-  <button mat-menu-item>
-    <span class="text-uppercase">About Us</span>
-  </button>
-  <button mat-menu-item>
-    <span class="text-uppercase">How Does The Service Work?</span>
-  </button>
-  <button mat-menu-item>
-    <span class="text-uppercase">What To Expect</span>
-  </button>
-</mat-menu>
 
 <div class="toolbar-spacer">
 </div>
 
 <router-outlet (activate)='onActivate($event)'></router-outlet>
 
+<div class="d-flex flex-wrap flex-row">
+  <mat-card class="footer-card">
+    <mat-card-content>
+      <div class="hours">
+        <p><strong>Hours of Operation</strong></p>
+        <div class="d-flex justify-content-between"><span>Monday</span><span>8AM - 5PM</span></div>
+        <div class="d-flex justify-content-between"><span>Tuesday</span><span>8AM - 5PM</span></div>
+        <div class="d-flex justify-content-between"><span>Wednesday</span><span>8AM - 5PM</span></div>
+        <div class="d-flex justify-content-between"><span>Thursday</span><span>8AM - 5PM</span></div>
+        <div class="d-flex justify-content-between"><span>Friday</span><span>8AM - 5PM</span></div>
+        <div class="d-flex justify-content-between"><span>Saturday</span><span>Closed</span></div>
+        <div class="d-flex justify-content-between"><span>Sunday</span><span>Closed</span></div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+
+<!--
 <div class="footer-top"></div>
 <div class="footer">
   <div class="row">
@@ -71,10 +66,6 @@
       <a routerLink="career">Careers</a><br/>
     </div>
     <div class="col-xs-12 col-sm-3">
-      <!--<a routerLink="contact">Contact Us</a><br/>-->
-      <!--<a routerLink="contact">Directions</a><br/>-->
-      <!--<a routerLink="service">Coupons</a><br/>-->
-      <!--<a routerLink="about">About Us</a>-->
     </div>
     <div class="col-xs-12 col-sm-3">
       <div class="social-icon">
@@ -94,5 +85,5 @@
       </div>
     </div>
   </div>
-
 </div>
+  -->

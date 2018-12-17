@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { OverlayModule } from '@angular/cdk/overlay';
+import { ServiceCardModule } from './service-card/service-card.module';
 
 import {
   MatButtonModule,
@@ -70,7 +71,8 @@ const appRoutes: Routes = [
     MatIconModule,
     MatCardModule,
     OverlayModule,
-    MatDialogModule
+    MatDialogModule,
+    ServiceCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
