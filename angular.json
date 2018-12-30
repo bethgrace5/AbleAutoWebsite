@@ -4,8 +4,8 @@
   "newProjectRoot": "projects",
   "projects": {
     "angular-seed": {
-      "root": "",
-      "sourceRoot": "src/app",
+      "root": "src",
+      "sourceRoot": "src",
       "projectType": "application",
       "architect": {
         "build": {
@@ -100,8 +100,8 @@
       }
     },
     "angular-seed-e2e": {
-      "root": "",
-      "sourceRoot": "src/app",
+      "root": "src",
+      "sourceRoot": "src",
       "projectType": "application",
       "architect": {
         "e2e": {

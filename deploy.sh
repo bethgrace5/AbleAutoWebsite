@@ -7,9 +7,9 @@ ng build --prod --base-href "./";
 echo "";
 
 # Setup repository CNAME file to point to custom domain
-echo "************************************************";
-echo $'www.ableautotech.com' > dist/CNAME;
-echo "";
+# echo "************************************************";
+# echo $'www.ableautotech.com' > dist/CNAME;
+# echo "";
 
 # Publish project
 echo "************************************************";
