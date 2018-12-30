@@ -1,5 +1,18 @@
 <mat-toolbar class="main-toolbar">
-  <mat-toolbar-row class="d-flex justify-content-between">
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item href="{{telephoneLink}}"><mat-icon>phone</mat-icon><span class="text-uppercase">Call</span> </a>
+      <a mat-menu-item href="{{googleUrl}}" target="_blank"> <mat-icon>directions</mat-icon><span class="text-uppercase">Directions</span> </a>
+      <a mat-menu-item href="{{appointmentUrl}}" target="_blank"><mat-icon>calendar_today</mat-icon> <span class="text-uppercase">Appointments</span> </a>
+      <button mat-menu-item routerLink="/service"> <span class="text-uppercase">Services</span> </button>
+      <!--<button mat-menu-item> <span class="text-uppercase">Careers</span> </button>-->
+      <!--<button mat-menu-item> <span class="text-uppercase">Reviews</span> </button>-->
+      <button mat-menu-item> <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">Financing Available</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">About Us</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">How Does The Service Work?</span> </button>
+      <button mat-menu-item> <span class="text-uppercase">What To Expect</span> </button>
+    </mat-menu>
+  <mat-toolbar-row class="d-flex flex-wrap flex-row justify-content-between">
     <div class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
       <img src="../assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair"/>
     </div>
@@ -7,19 +20,6 @@
       <!--<mat-icon>more_vert</mat-icon>-->
       <mat-icon>menu</mat-icon>
     </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item> <mat-icon>phone</mat-icon> <span class="text-uppercase">Call</span> </button>
-      <button mat-menu-item> <mat-icon>directions</mat-icon> <span class="text-uppercase">Directions</span> </button>
-      <button mat-menu-item> <mat-icon>calendar_today</mat-icon> <span class="text-uppercase">Appointments</span> </button>
-      <button mat-menu-item routerLink="/service"> <span class="text-uppercase">Services</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">Careers</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">Reviews</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">Financing Available</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">About Us</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">How Does The Service Work?</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">What To Expect</span> </button>
-    </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
 
