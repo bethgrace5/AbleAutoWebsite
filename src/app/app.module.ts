@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { ServiceCardModule } from './service-card/service-card.module';
+import { ActivatedRoute } from '@angular/router';
 
 import {
   MatButtonModule,
@@ -23,6 +24,12 @@ import { CareerComponent }      from './career/career.component';
 import { AboutComponent }       from './about/about.component';
 import { ApplyComponent }       from './apply/apply.component';
 import { AppointmentComponent } from './appointment/appointment.component';
+import { WarrantyComponent }    from './warranty/warranty.component';
+import { AaaInfoComponent }     from './aaa-info/aaa-info.component';
+import { ReviewsComponent }     from './reviews/reviews.component';
+import { BlogComponent }        from './blog/blog.component';
+import { FinancingComponent } from './financing/financing.component';
+import { PromotionsComponent } from './promotions/promotions.component';
 
 //import { FormsModule }          from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
@@ -35,14 +42,21 @@ import {
 } from 'ngx-bootstrap';
 
 const appRoutes: Routes = [
-  { path: 'dashboard',   component: DashboardComponent },
+  { path: '',            component: DashboardComponent },
   { path: 'contact',     component: ContactComponent },
   { path: 'service',     component: ServiceComponent },
   { path: 'career',      component: CareerComponent },
   { path: 'about',       component: AboutComponent },
   { path: 'apply',       component: ApplyComponent },
   { path: 'appointment', component: AppointmentComponent },
-  { path: '**',   redirectTo: 'dashboard' }
+  { path: 'warranty',    component: WarrantyComponent },
+  { path: 'aaa',         component: AaaInfoComponent },
+  { path: 'reviews',     component: ReviewsComponent },
+  { path: 'blog/:id',    component: BlogComponent },
+  { path: 'blog',        component: BlogComponent },
+  { path: 'financing',   component: FinancingComponent },
+  { path: 'promotions',  component: PromotionsComponent },
+  { path: '**',   redirectTo: '' }
 ];
 
 @NgModule({
@@ -54,7 +68,13 @@ const appRoutes: Routes = [
     CareerComponent,
     AboutComponent,
     ApplyComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    WarrantyComponent,
+    AaaInfoComponent,
+    ReviewsComponent,
+    BlogComponent,
+    FinancingComponent,
+    PromotionsComponent
   ],
   imports: [
     BrowserModule,

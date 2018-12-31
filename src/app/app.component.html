@@ -6,11 +6,10 @@
       <button mat-menu-item routerLink="/service"> <span class="text-uppercase">Services</span> </button>
       <!--<button mat-menu-item> <span class="text-uppercase">Careers</span> </button>-->
       <!--<button mat-menu-item> <span class="text-uppercase">Reviews</span> </button>-->
-      <button mat-menu-item> <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">Financing Available</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">About Us</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">How Does The Service Work?</span> </button>
-      <button mat-menu-item> <span class="text-uppercase">What To Expect</span> </button>
+      <button mat-menu-item routerLink="/warranty"> <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span> </button>
+      <button mat-menu-item routerLink="/financing"> <span class="text-uppercase">Financing Available</span> </button>
+      <button mat-menu-item routerLink="/blog"> <span class="text-uppercase">About Us</span> </button>
+      <button mat-menu-item routerLink="/promotions"> <span class="text-uppercase">Current Promotions</span> </button>
     </mat-menu>
   <mat-toolbar-row class="d-flex flex-wrap flex-row justify-content-between">
     <div class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
@@ -41,6 +40,24 @@
         <div class="d-flex justify-content-between"><span>Friday</span><span>8AM - 5PM</span></div>
         <div class="d-flex justify-content-between"><span>Saturday</span><span>Closed</span></div>
         <div class="d-flex justify-content-between"><span>Sunday</span><span>Closed</span></div>
+      </div>
+      <hr/>
+      <div class="hours">
+        <p><strong>Contact</strong></p>
+        <div class="d-flex justify-content-between"><span>Address</span></div>
+        <div class="d-flex justify-content-between"><span>phone</span></div>
+        <div class="d-flex justify-content-between"><span>email</span></div>
+        <div class="d-flex justify-content-between"><span>small map</span></div>
+        <div class="d-flex justify-content-between"><span>fax ??</span></div>
+      </div>
+      <hr/>
+      <div class="actions">
+        <p><strong>Actions</strong></p>
+        <div class="d-flex justify-content-between"><span>Appointments</span></div>
+        <div class="d-flex justify-content-between"><span>blog</span></div>
+        <div class="d-flex justify-content-between"><span>financing</span></div>
+        <div class="d-flex justify-content-between"><span>reviews</span></div>
+        <div class="d-flex justify-content-between"><span>social media links</span></div>
       </div>
     </mat-card-content>
   </mat-card>

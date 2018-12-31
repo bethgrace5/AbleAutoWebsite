@@ -3,7 +3,7 @@ import { Service } from './service.model';
 
 @Component({
   templateUrl: './service.component.html',
-  styleUrls: ['./service.component.css']
+  styleUrls: ['./service.component.scss']
 })
 
 

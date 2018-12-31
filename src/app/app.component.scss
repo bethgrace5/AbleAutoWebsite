@@ -15,6 +15,69 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.blank-card-1 {
+  background-image: url('/assets/img/bg01.png');
+  background-repeat: repeat;
+}
+.blank-card-2 {
+  background-image: url('/assets/img/bg02.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blank-card-3 {
+  background-image: url('/assets/img/bg03.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.triangle-card {
+  background-image: url('/assets/img/sect5.jpeg');
+  background-repeat: repeat;
+}
+
+.aaa-brand {
+  max-width: 100px;
+  min-width: 90px;
+}
+.warranty-brand {
+  padding: 10px 30px;
+}
+
+img.mat-card-image.caption-image {
+  margin-bottom: 0
+}
+.caption {
+  padding: 3px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 2px;
+  text-align: right;
+  font-style: italic;
+ }
+
+.promo-button {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.feature-place {
+  padding: 216px 0px 0px 0px;
+  height: 245px;
+  background-image: url('/assets/img/mojave-offroad-thumb.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.definition-box {
+	border: 2px solid #cccccc;
+  margin: 10px;
+  padding: 20px;
+	background-color: #ffffe6;
+}
+
 .limited-width-card {
   min-width: 250px;
   max-width: 700px;
@@ -76,20 +139,34 @@
   cursor: pointer;
 }
 
+
+
 /* =================== 2. Large Devices, Wide Screens ======================= */
 @media only screen and (max-width : 1200px) {
 }
 /* =================== 3. Medium Devices, Desktops ========================== */
 @media only screen and (max-width : 992px) {
+.warranty-brand {
+  padding: 0px 20px;
+}
 }
 /* =================== 4.  Small Devices, Tablets =========================== */
 @media only screen and (max-width : 768px) {
+.warranty-brand {
+  padding: 0px 20px;
+}
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */
 @media only screen and (max-width : 480px) {
+.warranty-brand {
+  padding: 30px 10px 5px 5px;
+}
 }
 /* =================== 6.  Custom, iPhone Retina ============================ */
 @media only screen and (max-width : 320px) {
+.warranty-brand {
+  padding: 40px 5px 5px 5px;
+}
 }
 
 /* REMOVE PARALLAX IE10+ CSS */

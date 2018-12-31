@@ -6,7 +6,7 @@
     <mat-card-content>
       <div class="warranty-brand-wrapper">
         <div class="d-flex flex-row">
-          <div routerLink="/dashboard">
+          <div [routerLink]="'/aaa'">
             <img src="./assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair"/>
           </div>
           <div class="text-center">
@@ -47,14 +47,14 @@
     <mat-card-content>
       <div>
         <div class="d-flex flex-row justify-content-center">
-          <div routerLink="/dashboard">
+          <div [routerLink]="'/warranty'">
             <img src="./assets/img/nationwide.jpg" class="warranty-brand img-fluid" alt="Nationwide Warranty"/>
           </div>
           <div class="text-center">
             <h5>3 Years / 36,000 Miles</h5>
             <h6>Nationwide warranty</h6>
             <p>Service available from ANY shop in the network</p>
-            <button mat-button color="primary">
+            <button [routerLink]="'/warranty'" mat-button color="primary">
               SEE DETAILS
               <mat-icon>keyboard_arrow_right</mat-icon>
             </button>
@@ -66,109 +66,6 @@
 
 </div>
 <div class="d-flex flex-wrap flex-row">
-  <mat-card class="basic-card limited-width-card blank-card-1">
-    <img mat-card-image src="./assets/img/back2school.png" alt="Back To School"/>
-    <mat-card-content>
-      <p><strong>It's that time of year again!</strong><br/>
-      Your little ones are in good hands, but can you say the same for your vehicle?
-      </p>
-      <ul>
-        <li>Oil Change</li>
-        <li>Tire Rotation</li>
-        <li>Multi-Point Inspection</li>
-      </ul>
-      <p>Conventional Windshield Wipers Also Included</p>
-      <p><strong>Schedule Your Appointment Today</strong></p>
-      <p><strong style="color:#002266">Small Gift for the first 10 to mention this ad!</strong></p>
-      <mat-card-actions class="d-flex justify-content-around">
-        <a href="{{telephoneLink}}" mat-raised-button class="promo-button" color="basic">
-          <mat-icon>phone</mat-icon>
-          CALL
-        </a>
-        <a href="{{appointmentUrl}}" target="_blank" mat-raised-button class="promo-button" color="primary">
-          <mat-icon>calendar_today</mat-icon>
-          BOOK
-        </a>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="basic-card limited-width-card blank-card-1">
-    <mat-card-header>
-      <h4>While You Work, We Are Able</h4>
-    </mat-card-header>
-    <img mat-card-image src="./assets/img/work1.jpg" alt="Work Desk"/>
-    <mat-card-content>
-      <p><strong>How Does It Work?</strong></p>
-      <p>We will pick up your vehicle from your work or home for service and deliver it at your convenience!</p>
-      <p>Currently, limited available slots! Schedule your appointment today!</p>
-      <mat-card-actions class="d-flex justify-content-around">
-        <a href="{{telephoneLink}}" mat-raised-button class="promo-button" color="basic">
-          <mat-icon>phone</mat-icon>
-          CALL
-        </a>
-        <a href="{{appointmentUrl}}" target="_blank" mat-raised-button class="promo-button" color="primary">
-          <mat-icon>calendar_today</mat-icon>
-          BOOK
-        </a>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
-
-
-  <mat-card class="basic-card limited-width-card triangle-card">
-    <mat-card-header>
-      <h4>Honesty, Quality, Trust</h4>
-    </mat-card-header>
-    <img mat-card-image class="caption-image" src="./assets/img/quilt.jpg" alt="Quilt"/>
-    <p class="caption">Kern River Blue Star Moms Present "Patriotic Quilt" Raffle Prize</p>
-    <mat-card-content class="aaa-text">
-      <p>No surprises. No pressure. Ever</p>
-      <p>We put emphasis on attention to detail to help promote your repair decisions upfront</p>
-      <p><strong>Expect safety, prevention, and your best interests</strong></p>
-      <mat-card-actions>
-        <button mat-button color="primary">
-          READ MORE
-          <mat-icon>keyboard_arrow_right</mat-icon>
-        </button>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="basic-card limited-width-card blank-card-1">
-    <mat-card-header>
-      <h4>Latest Technology</h4>
-    </mat-card-header>
-    <img mat-card-image class="caption-image" src="./assets/img/green-toolbox.jpg" alt="Toolbox"/>
-    <p class="caption">Trading Up From Clipboards and Cardstock To Tablets and Tech</p>
-    <mat-card-content class="aaa-text">
-      <p>Our ASE Certified Technicians are now equiped with the latest technology</p>
-      <p>The upgrade was not easy, but well worth the journey</p>
-      <mat-card-actions>
-        <button mat-button color="primary">
-          READ MORE
-          <mat-icon>keyboard_arrow_right</mat-icon>
-        </button>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="basic-card limited-width-card triangle-card">
-    <mat-card-header>
-      <h4>Confidence on The Road</h4>
-    </mat-card-header>
-    <img mat-card-image src="./assets/img/sunset-tire.jpg" alt="Sunset Tire"/>
-    <mat-card-content>
-      <p><strong>Our goal is to keep your vehicle up to date on preventative maintenance</strong></p>
-      <p>Our 3 Years / 36,000 Miles Warranty provides extra assurance to cover you anywhere in the nation</p>
-      <mat-card-actions>
-        <button mat-button color="primary">
-          READ MORE
-          <mat-icon>keyboard_arrow_right</mat-icon>
-        </button>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
 
   <mat-card class="basic-card limited-width-card dark-card">
     <mat-card-header>
@@ -179,7 +76,7 @@
       <p><strong>Our customers love us!</strong></p>
       <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
       <mat-card-actions>
-        <button mat-raised-button color="accent">
+        <button [routerLink]="'/reviews'" mat-raised-button color="accent">
           MORE REVIEWS
           <mat-icon>keyboard_arrow_right</mat-icon>
         </button>
@@ -187,41 +84,37 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-card class="basic-card limited-width-card blank-card-1">
+
+  <mat-card class="basic-card limited-width-card triangle-card">
     <mat-card-header>
-      <h4>Fellow Kern County Residents</h4>
+      <h4>Confidence on The Road</h4>
     </mat-card-header>
-    <img mat-card-image src="./assets/img/rrc.jpg" alt="Kern County"/>
+    <img mat-card-image src="./assets/img/sunset-tire.jpg" alt="Sunset Tire"/>
     <mat-card-content>
-      <h5>What Preventative Maintenace Should We Be Concerned About?</h5>
-      <p><strong>It may sound counter intuitive,</strong> but some vehicle parts such as belts and hoses are meant to wear out over time.</p>
-      <!--<p>They are built to be soft and pliable so they can do their job properly. As such, they must be replaced every so often.</p>-->
-      <div class="definition-box">
-        <p><strong>Preventative maintenance</strong> aims to fix key vehicle parts so we are less likely to have to repair or replace more expensive vehicle parts.</p>
-      </div>
-      <!--<p>Here in Kern County, we are a desert community. Summers are hot, often going many days above 100&deg;F, and winters, thout not snowy, are very cold.</p>-->
-      <p>Here in Kern County, summers often have many days above 100&deg;F. Winters, though not snowy are still very cold.</p>
-      <p><strong>What does all of this mean in terms of vehicle maintenace?</strong>
-      <!--<p>What extra parts should we be looking at or having a qualified professional inspect from time to time?</p>-->
-      <!--<p>What does all of this mean in terms of vehicle maintenace? What extra parts should we be looking at or having a qualified professional inspect from time to time?</p>-->
+      <p><strong>Our goal is to keep your vehicle up to date on preventative maintenance</strong></p>
       <mat-card-actions>
-        <button mat-raised-button color="accent">
-          LET'S TAKE A LOOK
+          <button mat-button [routerLink]="['/blog', 4]" color="primary">
+          READ MORE
           <mat-icon>keyboard_arrow_right</mat-icon>
         </button>
       </mat-card-actions>
     </mat-card-content>
   </mat-card>
+
+  <mat-card class="basic-card dark-card">
+    <mat-card-header>
+      <h4>Blog Articles</h4>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Question to pique interest to click</p>
+      <mat-card-actions>
+        <button [routerLink]="'/blog'" mat-raised-button color="accent">
+          READ MORE
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
+
 </div>
 
-<!--
-  <div class="row text-center">
-  <div class="col-md-4 col-sm-6 col-xs-12">
-  <iframe id="myIframe" src="//www.surecritic.com/businesses/2441/widgets/dynamic_reviews/7459" height="355" width="500" frameBorder="0"></iframe> 
-  </div>
-  <div class="col-md-4 col-sm-6 col-xs-12">
-  </div>
-  <div class="col-md-4 col-sm-6 col-xs-12">
-  </div>
-  </div>
--->
