@@ -28,40 +28,55 @@
 
 <router-outlet (activate)='onActivate($event)'></router-outlet>
 
-<div class="d-flex flex-wrap flex-row">
   <mat-card class="footer-card">
     <mat-card-content>
-      <div class="hours">
-        <p><strong>Hours of Operation</strong></p>
-        <div class="d-flex justify-content-between"><span>Monday</span><span>8AM - 5PM</span></div>
-        <div class="d-flex justify-content-between"><span>Tuesday</span><span>8AM - 5PM</span></div>
-        <div class="d-flex justify-content-between"><span>Wednesday</span><span>8AM - 5PM</span></div>
-        <div class="d-flex justify-content-between"><span>Thursday</span><span>8AM - 5PM</span></div>
-        <div class="d-flex justify-content-between"><span>Friday</span><span>8AM - 5PM</span></div>
-        <div class="d-flex justify-content-between"><span>Saturday</span><span>Closed</span></div>
-        <div class="d-flex justify-content-between"><span>Sunday</span><span>Closed</span></div>
-      </div>
-      <hr/>
-      <div class="hours">
-        <p><strong>Contact</strong></p>
-        <div class="d-flex justify-content-between"><span>Address</span></div>
-        <div class="d-flex justify-content-between"><span>phone</span></div>
-        <div class="d-flex justify-content-between"><span>email</span></div>
-        <div class="d-flex justify-content-between"><span>small map</span></div>
-        <div class="d-flex justify-content-between"><span>fax ??</span></div>
-      </div>
-      <hr/>
-      <div class="actions">
-        <p><strong>Actions</strong></p>
-        <div class="d-flex justify-content-between"><span>Appointments</span></div>
-        <div class="d-flex justify-content-between"><span>blog</span></div>
-        <div class="d-flex justify-content-between"><span>financing</span></div>
-        <div class="d-flex justify-content-between"><span>reviews</span></div>
-        <div class="d-flex justify-content-between"><span>social media links</span></div>
+      <div class="d-flex flex-wrap flex-row justify-content-between">
+        <div class="footer-box">
+          <p><strong>Hours of Operation</strong></p>
+          <div class="d-flex justify-content-between"><span>Monday</span><span>8AM - 5PM</span></div>
+          <div class="d-flex justify-content-between"><span>Tuesday</span><span>8AM - 5PM</span></div>
+          <div class="d-flex justify-content-between"><span>Wednesday</span><span>8AM - 5PM</span></div>
+          <div class="d-flex justify-content-between"><span>Thursday</span><span>8AM - 5PM</span></div>
+          <div class="d-flex justify-content-between"><span>Friday</span><span>8AM - 5PM</span></div>
+          <div class="d-flex justify-content-between"><span>Saturday</span><span>Closed</span></div>
+          <div class="d-flex justify-content-between"><span>Sunday</span><span>Closed</span></div>
+        </div>
+        <div class="footer-box">
+          <p><strong>Contact Info</strong></p>
+          <ul>
+            <li>
+              <a class="footer-link" href="{{googleUrl}}"><span>Bakersfield, CA 9308</span></a><br/>
+              <a class="footer-link" href="{{googleUrl}}"><span>2459 Fruitvale Ave, Ste 1</span></a>
+            </li>
+            <hr/>
+            <li>
+              <a class="footer-link" href="{{telephoneLink}}"><span>(661) 637-0669</span></a>
+            </li>
+            <hr/>
+            <li>
+              <a class="footer-link" href="mailto:contact@ableautotech.com?subject=website">contact@ableautotech.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <p><strong>Resources</strong></p>
+          <ul>
+            <li>
+              <div>
+                <a class="footer-link" href="https://ownerautosite.com/Security/Index.aspx?AspxAutoDetectCookieSupport=1" target="_blank">Mitchell1 Owner Auto Site - Login</a>
+                <p>Login to view services and repair history, manage vehicles, and schedule appointments</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a class="footer-link" href="{{appointmentUrl}}" target="_blank">Request Appointment - Without Logging In to Owner Auto Site</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </mat-card-content>
   </mat-card>
-</div>
 
 
 

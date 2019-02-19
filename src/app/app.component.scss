@@ -15,6 +15,14 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.left-content-card {
+  border: 2px solid green;
+}
+
+.center-content-card {
+  border: 2px solid green;
+}
+
 .blank-card-1 {
   background-image: url('/assets/img/bg01.png');
   background-repeat: repeat;
@@ -36,6 +44,15 @@
   background-repeat: repeat;
 }
 
+.yp-image {
+  border: 2px solid #ffcc00;
+  max-width: 500px;
+  margin: 30px;
+}
+.sunset-image {
+  max-width: 500px;
+}
+
 .aaa-brand {
   max-width: 100px;
   min-width: 90px;
@@ -43,9 +60,13 @@
 .warranty-brand {
   padding: 10px 30px;
 }
+.coast-to-coast-brand {
+  max-width: 400px;
+}
 
 img.mat-card-image.caption-image {
-  margin-bottom: 0
+  margin-bottom: 0;
+  max-width: 400px;
 }
 .caption {
   padding: 3px;
@@ -78,11 +99,6 @@ img.mat-card-image.caption-image {
 	background-color: #ffffe6;
 }
 
-.limited-width-card {
-  min-width: 250px;
-  max-width: 700px;
-}
-
 .action-card {
   background-color: #3d3d8f;
   color: white;
@@ -108,7 +124,19 @@ img.mat-card-image.caption-image {
 }
 
 .footer-card {
+  background-color: #4d4d4d;
+  color: white;
   width: 100%;
+}
+
+.footer-link {
+  border: 2px solid yellow;
+  color: #4d79ff;
+}
+
+.footer-box {
+  min-width: 200px;
+  padding: 10px;
 }
 
 .main-toolbar {
@@ -121,7 +149,6 @@ img.mat-card-image.caption-image {
 .fill-space {
   flex: 1 1 auto;
   flex-grow: 1;
-  border: 2px solid blue;
   display: block;
 }
 
@@ -146,27 +173,37 @@ img.mat-card-image.caption-image {
 }
 /* =================== 3. Medium Devices, Desktops ========================== */
 @media only screen and (max-width : 992px) {
-.warranty-brand {
-  padding: 0px 20px;
-}
+  .warranty-brand {
+    padding: 0px 20px;
+  }
 }
 /* =================== 4.  Small Devices, Tablets =========================== */
 @media only screen and (max-width : 768px) {
-.warranty-brand {
-  padding: 0px 20px;
-}
+  .warranty-brand {
+    padding: 0px 20px;
+  }
+  .yp-image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .sunset-image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */
 @media only screen and (max-width : 480px) {
-.warranty-brand {
-  padding: 30px 10px 5px 5px;
-}
+  .warranty-brand {
+    padding: 30px 10px 5px 5px;
+  }
 }
 /* =================== 6.  Custom, iPhone Retina ============================ */
 @media only screen and (max-width : 320px) {
-.warranty-brand {
-  padding: 40px 5px 5px 5px;
-}
+  .warranty-brand {
+    padding: 40px 5px 5px 5px;
+  }
 }
 
 /* REMOVE PARALLAX IE10+ CSS */
