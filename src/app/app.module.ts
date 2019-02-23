@@ -43,12 +43,12 @@ import {
 
 const appRoutes: Routes = [
   { path: '',            component: DashboardComponent },
-  { path: 'contact',     component: ContactComponent },
+  // { path: 'contact',     component: ContactComponent },
   { path: 'service',     component: ServiceComponent },
-  { path: 'career',      component: CareerComponent },
-  { path: 'about',       component: AboutComponent },
-  { path: 'apply',       component: ApplyComponent },
-  { path: 'appointment', component: AppointmentComponent },
+  // { path: 'career',      component: CareerComponent },
+  // { path: 'about',       component: AboutComponent },
+  // { path: 'apply',       component: ApplyComponent },
+  // { path: 'appointment', component: AppointmentComponent },
   { path: 'warranty',    component: WarrantyComponent },
   { path: 'aaa',         component: AaaInfoComponent },
   { path: 'reviews',     component: ReviewsComponent },

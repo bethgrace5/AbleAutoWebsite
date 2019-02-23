@@ -81,21 +81,60 @@
   </mat-card>
 
 
-  <mat-card class="basic-card triangle-card">
-    <mat-card-header>
-      <h4>Confidence on The Road</h4>
-    </mat-card-header>
-    <img mat-card-image src="./assets/img/sunset-tire-sm.jpg" class="sunset-image" alt="Sunset Tire"/>
-    <mat-card-content>
-      <p><strong>Our goal is to keep your vehicle up to date on preventative maintenance</strong></p>
-      <mat-card-actions>
-          <button mat-button [routerLink]="['/blog', 4]" color="primary">
-          READ MORE
-          <mat-icon>keyboard_arrow_right</mat-icon>
-        </button>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
+  <div class="d-flex flex-wrap justify-content-between align-items-stretch">
+    <mat-card class="basic-card basic-content-card triangle-card">
+      <mat-card-header>
+        <h4>Confidence on The Road</h4>
+      </mat-card-header>
+      <img mat-card-image src="./assets/img/sunset-tire.jpg" alt="Sunset Tire"/>
+      <mat-card-content>
+        <p><strong>Our goal is to keep your vehicle up to date on preventative maintenance</strong></p>
+        <mat-card-actions>
+            <button mat-button [routerLink]="['/blog', 4]" color="primary">
+            READ MORE
+            <mat-icon>keyboard_arrow_right</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="basic-card basic-content-card blank-card-2">
+      <mat-card-header>
+        <h4>Honesty, Quality, Trust</h4>
+      </mat-card-header>
+      <img mat-card-image src="./assets/img/quilt.jpg" alt="Quilt"/>
+      <p class="caption">Kern River Blue Star Moms Present "Patriotic Quilt" Raffle Prize</p>
+      <mat-card-content>
+        <p>No surprises. No pressure. Ever</p>
+        <p>We put emphasis on attention to detail to help promote your repair decisions upfront</p>
+        <p><strong>Expect safety, prevention, and your best interests</strong></p>
+        <mat-card-actions>
+            <button mat-button [routerLink]="['/blog', 4]" color="primary">
+            READ MORE
+            <mat-icon>keyboard_arrow_right</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
+
+
+    <mat-card class="basic-card basic-content-card blank-card-1">
+        <mat-card-header>
+          <h4>Latest Technology</h4>
+        </mat-card-header>
+        <img mat-card-image src="./assets/img/green-toolbox.jpg" alt="Toolbox"/>
+        <p class="caption">Trading Up From Clipboards and Cardstock To Tablets and Tech</p>
+        <mat-card-content>
+            <p>Our ASE Certified Technicians are now equiped with the latest technology</p>
+          <mat-card-actions>
+              <button mat-button [routerLink]="['/blog', 4]" color="primary">
+              READ MORE
+              <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-card-content>
+      </mat-card>
+  </div>
 
   <mat-card class="basic-card dark-card">
     <mat-card-header>
