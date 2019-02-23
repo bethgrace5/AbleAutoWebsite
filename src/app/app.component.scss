@@ -86,12 +86,14 @@ img.mat-card-image.caption-image {
 }
 
 .feature-place {
-  padding: 216px 0px 0px 0px;
-  height: 245px;
+  padding: 0px;
+  height: 445px;
   background-image: url('/assets/img/mojave-offroad-thumb.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  // background-attachment: fixed;
+  background-position: top;
 }
 
 .definition-box {
@@ -102,7 +104,7 @@ img.mat-card-image.caption-image {
 }
 
 .action-card {
-  background-color: #3d3d8f;
+  background-color: #0d4073;
   color: white;
 }
 .action-card span {
@@ -133,36 +135,53 @@ img.mat-card-image.caption-image {
   padding: 2px
 }
 
-.basic-content-card {
+.triangle-content-card {
   background-image: url('/assets/img/sect5.jpeg');
   background-repeat: repeat;
 }
 
+.light-card {
+  background-color: white;
+  // color: #0d4073;
+  padding: 30px 0px;
+}
+
 .dark-card {
   color: white;
-  background-color: #3d3d8f;
+  // background-color: #3d3d8f;
+  background-color: #0d4073;
 }
 .dark-card h5,
 .dark-card p {
-	color: white;
   margin: 10px 8px;
   font-family: 'Nunito Sans', sans-serif;
 }
 
 .footer-card {
-  background-color: #4d4d4d;
+  // background-color: #4d4d4d;
+  border-top: 4px solid #737373;
+  // background-color: #cccccc;
+  background-image: url('/assets/tech-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   width: 100%;
 }
 
+.fooger-card a, .fooger-card span, .fooger-card li {
+  font-size: 16px;
+}
 .footer-link {
-  border: 2px solid yellow;
-  color: #4d79ff;
+  //  border: 2px solid yellow;
+  font-size: 16px;
+  color: white;
 }
 
 .footer-box {
-  min-width: 200px;
+  background-color: black;
+    // min-width: 200px;
   padding: 10px;
+  opacity: 0.8;
 }
 
 .main-toolbar {
@@ -216,6 +235,11 @@ img.mat-card-image.caption-image {
 
   .basic-content-card {
     padding: 30px 0px;
+  }
+  .feature-place {
+    height: 245px;
+    background-attachment: scroll;
+    background-size: cover;
   }
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */

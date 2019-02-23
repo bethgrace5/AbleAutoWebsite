@@ -42,7 +42,7 @@
     </div>
   </mat-card>
 
-  <mat-card class="flex-grow-1 basic-card blank-card-3">
+  <mat-card class="flex-grow-1 triangle-card">
     <mat-card-content>
       <div>
         <div class="d-flex justify-content-center">
@@ -63,6 +63,38 @@
     </mat-card-content>
   </mat-card>
 
+  <div class="d-flex flex-wrap justify-content-around align-items-stretch">
+      <div class="light-card flex-grow-1">
+            <div class="d-flex flex-wrap justify-content-around align-items-stretch">        
+              <div class="item1">
+                <h4>Services</h4>
+                <ul>
+                    <li>Air Conditioning</li>
+                    <li>Lube Oil Filter</li>
+                    <li>Brake Service</li>
+                  </ul>
+                  <button [routerLink]="'/service'" mat-button color="basic">
+                    ALL SERVICES
+                    <mat-icon>keyboard_arrow_right</mat-icon>
+                  </button>
+              </div>
+              <div class="item1">
+                  <h4>Makes And Models</h4>
+                  <p>We are general auto repair servicing most makes and models.</p>
+              </div>
+              <div class="item1">
+                  <h4>Financing Available!</h4>
+                  <p>We provide financing through [Financing Service]</p>
+                    <button [routerLink]="'/financing'" mat-raised-button color="basic">
+                      MORE INFO
+                      <mat-icon>keyboard_arrow_right</mat-icon>
+                    </button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      
   <mat-card class="basic-card dark-card">
     <mat-card-header>
       <h4>Don't Just Take Our Word!</h4>
@@ -83,28 +115,28 @@
 
   
   <div class="d-flex flex-wrap justify-content-around align-items-stretch">
-  <div class="basic-content-card flex-grow-1">
+  <div class="flex-grow-1">
         <div class="d-flex flex-wrap justify-content-around align-items-stretch">        
-          <div class="item1">
+          <div id="blog1" class="item1">
             <h4>Honesty, Quality, Trust</h4>
             <img class="img-fluid" src="./assets/img/quilt.jpg" alt="Quilt"/>
             <!-- <p>Kern River Blue Star Moms Present "Patriotic Quilt" Raffle Prize</p> -->
             <p>We put emphasis on attention to detail to help promote your repair decisions upfront</p>
-            <button [routerLink]="['/blog', 4]" mat-button color="accent">
+            <button [routerLink]="['/blog', 1]" mat-button color="accent">
               READ MORE
               <mat-icon>keyboard_arrow_right</mat-icon>
             </button>
           </div>
-          <div class="item1">
+          <div id="blog2" class="item1">
             <h4>Latest Technology</h4>
             <img class="img-fluid" src="./assets/img/green-toolbox.jpg" alt="Toolbox"/>
             <p>Our ASE Certified Technicians are now equiped with the latest technology</p>
-            <button [routerLink]="['/blog', 4]" mat-button color="accent">
+            <button [routerLink]="['/blog', 2]" mat-button color="accent">
               READ MORE
               <mat-icon>keyboard_arrow_right</mat-icon>
             </button>
           </div>
-          <div class="item1">
+          <div id="blog3" class="item1">
             <h4>Confidence on The Road</h4>
             <img class="img-fluid" src="./assets/img/sunset-tire.jpg" alt="Sunset Tire"/>
             <br/>
@@ -118,23 +150,5 @@
     </div>
   </div>
 
-  <mat-card class="basic-card dark-card">
-    <mat-card-header>
-      <h4>Services</h4>
-    </mat-card-header>
-    <mat-card-content>
-      <ul>
-        <li>Air Conditioning</li>
-        <li>Lube Oil Filter</li>
-        <li>Brake Service</li>
-      </ul>
-      <mat-card-actions>
-        <button [routerLink]="'/service'" mat-raised-button color="accent">
-          ALL SERVICES
-          <mat-icon>keyboard_arrow_right</mat-icon>
-        </button>
-      </mat-card-actions>
-    </mat-card-content>
-  </mat-card>
 
 
