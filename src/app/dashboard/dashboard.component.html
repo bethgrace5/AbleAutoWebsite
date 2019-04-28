@@ -33,22 +33,58 @@
 </div>
 
 
-<div>
-<div>
-  <div [routerLink]="'/warranty'">
-    <img src="./assets/img/nationwide.jpg" class="warranty-brand" alt="Nationwide Warranty"/>
+<div class="blog-banner-wrapper">        
+  <div class="blog-item" id="blog1">
+    <h4>Honesty, Quality, Trust</h4>
+    <div class="quilt-image"></div>
+    <p>We put emphasis on attention to detail to help promote your repair decisions upfront</p>
+    <button [routerLink]="['/blog', 1]" mat-button color="accent">
+      READ MORE
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
   </div>
-  <div>
-    <h5>3 Years / 36,000 Miles</h5>
-    <h6>Nationwide warranty</h6>
-    <p>Service available from ANY shop in the network</p>
-    <button [routerLink]="'/warranty'" mat-button color="primary">
-      SEE DETAILS
+
+  <div class="blog-item" id="blog2">
+    <h4>Latest Technology</h4>
+    <div class="toolbox-image"></div>
+    <!--<img class="img-fluid" src="./assets/img/green-toolbox.jpg" alt="Toolbox"/>-->
+    <p>Our ASE Certified Technicians are now equiped with the latest technology</p>
+    <button [routerLink]="['/blog', 2]" mat-button color="accent">
+      READ MORE
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+
+  <div class="blog-item" id="blog3">
+    <h4>Confidence on The Road</h4>
+    <div class="sunset-image"></div>
+    <!--<img class="img-fluid" src="./assets/img/sunset-tire.jpg" alt="Sunset Tire"/>-->
+    <p>Our goal is to keep your vehicle up to date on preventative maintenance</p>
+    <button [routerLink]="['/blog', 4]" mat-button color="accent">
+      READ MORE
       <mat-icon>keyboard_arrow_right</mat-icon>
     </button>
   </div>
 </div>
-</div>
+
+
+
+<!--
+  <div>
+    <div [routerLink]="'/warranty'">
+      <img src="./assets/img/nationwide.jpg" class="warranty-brand" alt="Nationwide Warranty"/>
+    </div>
+    <div>
+      <h5>3 Years / 36,000 Miles</h5>
+      <h6>Nationwide warranty</h6>
+      <p>Service available from ANY shop in the network</p>
+      <button [routerLink]="'/warranty'" mat-button color="primary">
+        SEE DETAILS
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
+  </div>
+-->
 
 <!--
   <div class="d-flex flex-wrap justify-content-around align-items-stretch">
@@ -100,43 +136,9 @@
     </div>
   </div>
 
+-->
+
 
   
-  <div class="d-flex flex-wrap justify-content-around align-items-stretch">
-  <div class="flex-grow-1">
-        <div class="d-flex flex-wrap justify-content-around align-items-stretch">        
-          <div id="blog1" class="item1">
-            <h4>Honesty, Quality, Trust</h4>
-            <img class="img-fluid" src="./assets/img/quilt.jpg" alt="Quilt"/>
-            <p>We put emphasis on attention to detail to help promote your repair decisions upfront</p>
-            <button [routerLink]="['/blog', 1]" mat-button color="accent">
-              READ MORE
-              <mat-icon>keyboard_arrow_right</mat-icon>
-            </button>
-          </div>
-          <div id="blog2" class="item1">
-            <h4>Latest Technology</h4>
-            <img class="img-fluid" src="./assets/img/green-toolbox.jpg" alt="Toolbox"/>
-            <p>Our ASE Certified Technicians are now equiped with the latest technology</p>
-            <button [routerLink]="['/blog', 2]" mat-button color="accent">
-              READ MORE
-              <mat-icon>keyboard_arrow_right</mat-icon>
-            </button>
-          </div>
-          <div id="blog3" class="item1">
-            <h4>Confidence on The Road</h4>
-            <img class="img-fluid" src="./assets/img/sunset-tire.jpg" alt="Sunset Tire"/>
-            <br/>
-            <p>Our goal is to keep your vehicle up to date on preventative maintenance</p>
-            <button [routerLink]="['/blog', 4]" mat-button color="accent">
-              READ MORE
-              <mat-icon>keyboard_arrow_right</mat-icon>
-            </button>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  -->
 
 

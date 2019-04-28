@@ -85,16 +85,16 @@ strong
   align-self: center;
 }
 .action-banner-wrapper {
+  border-radius: 80px 10px 0px 0px;
+  border-left: 2px solid #8c8c8c;
+  border-top: 2px solid #8c8c8c;
   padding: 30px 0px;
-  /*background: #0d4073;*/
+  background: #0d4073;
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  background: linear-gradient(to right, red 50%, blue 50%);
-  background-size: 100%;
-  background-position:left bottom;
 }
 .action-banner-wrapper span {
   padding-top: 3px;
@@ -119,6 +119,54 @@ strong
   flex-direction: column;
   text-align: center;
 }
+
+.blog-banner-wrapper {
+  background: #0d4073;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-left: 2px solid #8c8c8c;
+}
+.blog-banner-wrapper div{
+  max-width: 380px;
+  min-width: 200px;
+}
+
+.blog-item {
+  border-radius: 5px;
+  padding: 45px 5px;
+  margin: 25px 5px 0px 5px;
+  background-image: url('/assets/img/sect5.jpeg');
+  background-repeat: repeat;
+}
+
+.sunset-image {
+  width: 100%;
+  height: 200px;
+  background-image: url("/assets/img/sunset-tire.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.toolbox-image {
+  width: 100%;
+  height: 200px;
+  background-image: url("/assets/img/green-toolbox.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.quilt-image {
+  width: 100%;
+  height: 200px;
+  background-image: url("/assets/img/quilt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .coast-to-coast-brand {
   max-width: 400px;
 }
