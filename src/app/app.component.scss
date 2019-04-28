@@ -85,11 +85,9 @@ strong
   align-self: center;
 }
 .action-banner-wrapper {
-  border-radius: 80px 10px 0px 0px;
-  border-left: 2px solid #8c8c8c;
-  border-top: 2px solid #8c8c8c;
+  border-radius: 80px 00px 80px 0px;
   padding: 30px 0px;
-  background: #0d4073;
+  background: #29a3a3;
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -121,13 +119,13 @@ strong
 }
 
 .blog-banner-wrapper {
-  background: #0d4073;
   display: flex;
   flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  border-left: 2px solid #8c8c8c;
+  background-image: url('/assets/img/sect5.jpeg');
+  background-repeat: repeat;
 }
 .blog-banner-wrapper div{
   max-width: 380px;
@@ -136,13 +134,12 @@ strong
 
 .blog-item {
   border-radius: 5px;
-  padding: 45px 5px;
-  margin: 25px 5px 0px 5px;
-  background-image: url('/assets/img/sect5.jpeg');
-  background-repeat: repeat;
+  padding: 25px 5px;
+  margin: 25px 5px;
 }
 
 .sunset-image {
+  border-radius: 5px;
   width: 100%;
   height: 200px;
   background-image: url("/assets/img/sunset-tire.jpg");
@@ -151,6 +148,7 @@ strong
   background-position: 50% 50%;
 }
 .toolbox-image {
+  border-radius: 5px;
   width: 100%;
   height: 200px;
   background-image: url("/assets/img/green-toolbox.jpg");
@@ -159,6 +157,7 @@ strong
   background-position: 50% 50%;
 }
 .quilt-image {
+  border-radius: 5px;
   width: 100%;
   height: 200px;
   background-image: url("/assets/img/quilt.jpg");

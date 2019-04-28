@@ -33,7 +33,7 @@
 </div>
 
 
-<div class="blog-banner-wrapper">        
+<div class="blog-banner-wrapper">
   <div class="blog-item" id="blog1">
     <h4>Honesty, Quality, Trust</h4>
     <div class="quilt-image"></div>
@@ -67,78 +67,58 @@
   </div>
 </div>
 
-
-
-<!--
+<div>
+  <div [routerLink]="'/warranty'">
+    <img src="./assets/img/nationwide.jpg" class="warranty-brand" alt="Nationwide Warranty"/>
+  </div>
   <div>
-    <div [routerLink]="'/warranty'">
-      <img src="./assets/img/nationwide.jpg" class="warranty-brand" alt="Nationwide Warranty"/>
-    </div>
-    <div>
-      <h5>3 Years / 36,000 Miles</h5>
-      <h6>Nationwide warranty</h6>
-      <p>Service available from ANY shop in the network</p>
-      <button [routerLink]="'/warranty'" mat-button color="primary">
-        SEE DETAILS
-        <mat-icon>keyboard_arrow_right</mat-icon>
-      </button>
-    </div>
+    <h5>3 Years / 36,000 Miles</h5>
+    <h6>Nationwide warranty</h6>
+    <p>Service available from ANY shop in the network</p>
+    <button [routerLink]="'/warranty'" mat-button color="primary">
+      SEE DETAILS
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
   </div>
--->
+</div>
+
+<div>
+  <h4>Don't Just Take Our Word!</h4>
+  <img div src="./assets/img/yellowPage.png" class="yp-image" alt="Yellow Pages Review"/>
+  <div>
+    <p><strong>Our customers love us!</strong></p>
+    <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
+    <button [routerLink]="'/reviews'" mat-raised-button color="accent">
+      MORE REVIEWS
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+</div>
+
 
 <!--
-  <div class="d-flex flex-wrap justify-content-around align-items-stretch">
-      <div class="light-card flex-grow-1">
-            <div class="d-flex flex-wrap justify-content-around align-items-stretch">        
-              <div class="item1">
-                <h4>Services</h4>
-                <ul>
-                    <li>Air Conditioning</li>
-                    <li>Lube Oil Filter</li>
-                    <li>Brake Service</li>
-                  </ul>
-                  <button [routerLink]="'/service'" mat-button color="basic">
-                    ALL SERVICES
-                    <mat-icon>keyboard_arrow_right</mat-icon>
-                  </button>
-              </div>
-              <div class="item1">
-                  <h4>Makes And Models</h4>
-                  <p>We are general auto repair servicing most makes and models.</p>
-              </div>
-              <div class="item1">
-                  <h4>Financing Available!</h4>
-                  <p>We provide financing through [Financing Service]</p>
-                    <button [routerLink]="'/financing'" mat-raised-button color="basic">
-                      MORE INFO
-                      <mat-icon>keyboard_arrow_right</mat-icon>
-                    </button>
-              </div>
-            </div>
-        </div>
-      </div>
-
-      
-  <div class="basic-card dark-card">
-    <div>
-      <h4>Don't Just Take Our Word!</h4>
-    </div>
-    <img div src="./assets/img/yellowPage.png" class="yp-image" alt="Yellow Pages Review"/>
-    <div>
-      <p><strong>Our customers love us!</strong></p>
-      <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
-      <div>
-        <button [routerLink]="'/reviews'" mat-raised-button color="accent">
-          MORE REVIEWS
-          <mat-icon>keyboard_arrow_right</mat-icon>
-        </button>
-      </div>
-    </div>
+  <div class="item1">
+  <h4>Services</h4>
+  <ul>
+  <li>Air Conditioning</li>
+  <li>Lube Oil Filter</li>
+  <li>Brake Service</li>
+  </ul>
+  <button [routerLink]="'/service'" mat-button color="basic">
+  ALL SERVICES
+  <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
   </div>
-
+  <div class="item1">
+  <h4>Makes And Models</h4>
+  <p>We are general auto repair servicing most makes and models.</p>
+  </div>
+  <div class="item1">
+  <h4>Financing Available!</h4>
+  <p>We provide financing through [Financing Service]</p>
+  <button [routerLink]="'/financing'" mat-raised-button color="basic">
+  MORE INFO
+  <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
+  </div>
 -->
-
-
-  
-
-
