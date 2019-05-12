@@ -50,10 +50,6 @@ strong
   margin: 30px;
 }
 
-.aaa-brand {
-  max-width: 100px;
-  min-width: 90px;
-}
 .main-banner-wrapper {
   flex-wrap: wrap;
   display: flex;
@@ -62,19 +58,10 @@ strong
   background-image: url('/assets/img/bg01.png');
   background-repeat: repeat;
 }
-.aaa-banner-wrapper {
-  padding: 10px;
-  display: flex;
-  flex: 1;
-  justify-content: left;
-}
 .aaa-brand {
+  max-width: 90px;
+  min-width: 80px;
   margin: 10px;
-  display: flex;
-  flex: 0;
-  flex-direction: row;
-  justify-content: center;
-  align-self: center;
 }
 .warranty-brand {
   padding: 10px;
@@ -85,14 +72,13 @@ strong
   align-self: center;
 }
 .action-banner-wrapper {
-  border-radius: 80px 00px 80px 0px;
   padding: 30px 0px;
-  background: #29a3a3;
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  background: #123354;
 }
 .action-banner-wrapper span {
   padding-top: 3px;
@@ -118,6 +104,32 @@ strong
   text-align: center;
 }
 
+.sunset-banner-wrapper {
+  padding: 2rem 0rem;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  background: #455154;
+}
+
+.sunset-banner-wrapper h2,
+.sunset-banner-wrapper p {
+  text-align: center;
+  color: white;
+}
+
+.sunset-image {
+  border-radius: 2px;
+  margin: 0.5rem;
+  height: 300px;
+  background-image: url("/assets/img/sunet-tire-new.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
 .blog-banner-wrapper {
   display: flex;
   flex: 1;
@@ -138,15 +150,6 @@ strong
   margin: 25px 5px;
 }
 
-.sunset-image {
-  border-radius: 5px;
-  width: 100%;
-  height: 200px;
-  background-image: url("/assets/img/sunset-tire.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
 .toolbox-image {
   border-radius: 5px;
   width: 100%;
@@ -170,11 +173,6 @@ strong
   max-width: 400px;
 }
 
-img.sunset-image.mat-card-image {
-  max-width: 450px;
-  max-height: 415px;
-}
-
 img.mat-card-image.caption-image {
   margin-bottom: 0;
   max-width: 400px;
@@ -195,12 +193,34 @@ img.mat-card-image.caption-image {
 
 .feature-place {
   width: 100vw;
-  height: 350px;
-  background-image: url("/assets/img/mojave-offroad-thumb.jpg");
+  height: 400px;
+  /*background-image: url("/assets/img/mojave-offroad-thumb.jpg");*/
+  background-image: url("/assets/img/road-2.jpg");
+  /*background-image: url("/assets/img/car-in-yosemite.jpg");*/
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center center;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.5rem;
 }
+
+.feature-text {
+  max-width: 450px;
+  border: 1px solid #004080;
+  color: #00264d;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 7px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 
 .definition-box {
 	border: 2px solid #cccccc;
@@ -210,7 +230,7 @@ img.mat-card-image.caption-image {
 }
 
 .action-card {
-  background-color: #0d4073;
+  background: #0d4073;
   color: white;
 }
 .action-card span {
@@ -264,14 +284,9 @@ img.mat-card-image.caption-image {
 }
 
 .footer-card {
-  // background-color: #4d4d4d;
+  background-color: #4d4d4d;
   border-top: 4px solid #737373;
   // background-color: #cccccc;
-  background-image: url('/assets/tech-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  width: 100%;
 }
 
 .fooger-card a, .fooger-card span, .fooger-card li {
@@ -284,7 +299,7 @@ img.mat-card-image.caption-image {
 }
 
 .footer-box {
-  background-color: black;
+  background-color: #539aac;
     // min-width: 200px;
   padding: 10px;
   opacity: 0.8;
@@ -338,6 +353,10 @@ img.mat-card-image.caption-image {
   }
 
   .feature-place {
+    height: 350px;
+  }
+
+  .sunset-banner-wrapper div{
     height: 200px;
   }
 }
