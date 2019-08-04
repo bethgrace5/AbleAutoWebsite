@@ -108,27 +108,108 @@ strong
   padding: 2rem 0rem;
   display: flex;
   flex: 1;
-  justify-content: center;
   flex-direction: column;
-  background: #455154;
 }
 
-.sunset-banner-wrapper h2,
-.sunset-banner-wrapper p {
-  text-align: center;
-  color: white;
+.sunset-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sunset-header {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sunset-header .mat-icon {
+  font-size: 32px;
+  color: #248f24;
+  margin: 0rem;
+}
+
+.sunset-column-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: 0.5rem 0.5rem 2rem 0.5rem;
+}
+.sunset-column-section h4 {
 }
 
 .sunset-image {
   border-radius: 2px;
   margin: 0.5rem;
   height: 300px;
-  background-image: url("/assets/img/sunet-tire-new.jpg");
+  width: 600px;
+  background-image: url("/assets/img/car-dog-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
+.review-banner-wrapper {
+  border-top: 1px solid #d0d0d0;
+  background-image: url("/assets/img/bg01.png");
+  padding: 2rem 0rem;
+  display: flex;
+  flex: 0;
+  flex-direction: column;
+}
+
+.review-row {
+  display: flex;
+  flex: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-header {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.review-header .mat-icon {
+  font-size: 32px;
+  color: red;
+  margin: 0rem;
+}
+
+.review-column-section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: 0.5rem 0.5rem 2rem 0.5rem;
+}
+
+.review-yellow-page {
+  border-radius: 2px;
+  margin: 0.5rem;
+  height: 190px;
+  width: 590px;
+  background-image: url("/assets/img/yellowPage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.review-google {
+  margin: 0.5rem;
+  border-radius: 2px;
+  margin: 0.5rem 0rem 1rem 1rem;
+  height: 120px;
+  width: 120px;
+  background-image: url("/assets/img/write-google-reviews.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 .blog-banner-wrapper {
   display: flex;
@@ -230,7 +311,7 @@ img.mat-card-image.caption-image {
 }
 
 .action-card {
-  background: #0d4073;
+  background: #123354;
   color: white;
 }
 .action-card span {
@@ -268,14 +349,13 @@ img.mat-card-image.caption-image {
 
 .light-card {
   background-color: white;
-  // color: #0d4073;
+  color: #123354;
   padding: 30px 0px;
 }
 
 .dark-card {
   color: white;
-  // background-color: #3d3d8f;
-  background-color: #0d4073;
+  background: #123354;
 }
 .dark-card h5,
 .dark-card p {
@@ -284,25 +364,75 @@ img.mat-card-image.caption-image {
 }
 
 .footer-card {
-  background-color: #4d4d4d;
-  border-top: 4px solid #737373;
-  // background-color: #cccccc;
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  background: #123354;
+  color: #ffffff;
 }
 
 .fooger-card a, .fooger-card span, .fooger-card li {
   font-size: 16px;
 }
 .footer-link {
-  //  border: 2px solid yellow;
   font-size: 16px;
   color: white;
 }
 
+.footer-box h5 {
+  padding: 0.1rem;
+  background: #004080;
+}
+
 .footer-box {
-  background-color: #539aac;
-    // min-width: 200px;
-  padding: 10px;
-  opacity: 0.8;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.social-media {
+  padding: 0.5rem;
+  //background: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+.social-icon {
+  border-radius: 3px;
+  background: yellow;
+  height: 40px;
+  width: 40px;
+  margin: 0.2rem;
+}
+.facebook-icon {
+  background-image: url("/assets/img/73-social-media.png");
+  background-position: left -6px top -4px;
+  background-size: 800%;
+}
+.insta-icon {
+  background-image: url("/assets/img/73-social-media.png");
+  background-position: left -60px top -4px;
+  background-size: 800%;
+}
+.twitter-icon {
+  background-image: url("/assets/img/73-social-media.png");
+  background-position: left -113px top -52px;
+  background-size: 800%;
+}
+.yellow-page {
+  height: 100px;
+  width: 100%;
+  margin: 0.2rem;
+  background-size: cover;
+  background-image: url("/assets/img/yellowPage.png");
+}
+.hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 200px;
+  border-bottom: 1px solid #004080;
 }
 
 .main-toolbar {
@@ -356,9 +486,40 @@ img.mat-card-image.caption-image {
     height: 350px;
   }
 
-  .sunset-banner-wrapper div{
-    height: 200px;
+  .sunset-image {
+    width: 90%;
   }
+
+  .sunset-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sunset-column p {
+    width: 90%;
+  }
+
+  .footer-card {
+    flex-direction: column;
+  }
+
+  .review-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review-yellow-page {
+    background-size: 100%;
+    height: 100px;
+    width: 100%;
+  }
+
+  .review-google {
+    height: 100px;
+    width: 100px;
+  }
+
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */
 @media only screen and (max-width : 480px) {

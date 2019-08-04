@@ -71,25 +71,47 @@
 </div>
 
 <div class="sunset-banner-wrapper">
-  <h2>Confidence On The Road</h2>
-  <p>Your safety is important</p>
-  <div class="sunset-image"></div>
+  <div class="sunset-header">
+    <h2>Confidence On The Road <mat-icon>check_circle</mat-icon> </h2>
+  </div>
+  <div class="sunset-column">
+    <div class="sunset-image"></div>
+    <div class="sunset-column-section">
+      <h4>Your <span style="color:#248f24">safety</span> is important</h4>
+      <div>
+          <p><strong>It may sound counter intuitive,</strong> but some vehicle parts such as belts and hoses are meant to wear out over time.</p>
+          <p>Many small moving parts are built to be soft and pliable so they can do their job properly by reducing friction. As such, they must be replaced every so often. Our <strong>multi point inspection</strong> ensures that our ASE cerified technicians look over key points, and supply a digital inspection report, images, and a health rating so you know where they stand, and when you need to take action to repair or replace them, also known as preventative maintenance.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
+<div class="review-banner-wrapper">
+  <div class="review-header">
+    <div>
+      <h2>Our Customers Love Us <mat-icon>favorite</mat-icon> </h2>
+    </div>
+    <h4>Don't just take our word for it!</h4>
+    <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
+  </div>
+  <div class="review-row">
+    <div class="review-yellow-page"></div>
+    <div class="review-google"></div>
+  </div>
+  <button [routerLink]="'/reviews'" mat-raised-button color="accent">
+    MORE REVIEWS
+    <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
+</div>
 
-<!--<div>
+<!--
+<div>
   <h4>Don't Just Take Our Word!</h4>
   <img div src="./assets/img/yellowPage.png" class="yp-image" alt="Yellow Pages Review"/>
   <div>
     <p><strong>Our customers love us!</strong></p>
-    <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
-    <button [routerLink]="'/reviews'" mat-raised-button color="accent">
-      MORE REVIEWS
-      <mat-icon>keyboard_arrow_right</mat-icon>
-    </button>
   </div>
 </div>
-
 -->
 
 <!--

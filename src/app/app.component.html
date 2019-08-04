@@ -1,26 +1,24 @@
 <mat-toolbar class="main-toolbar">
-    <mat-menu #menu="matMenu">
-      <a mat-menu-item href="{{telephoneLink}}"><mat-icon>phone</mat-icon><span class="text-uppercase">Call</span> </a>
-      <a mat-menu-item href="{{googleUrl}}" target="_blank"> <mat-icon>directions</mat-icon><span class="text-uppercase">Directions</span> </a>
-      <a mat-menu-item href="{{appointmentUrl}}" target="_blank"><mat-icon>calendar_today</mat-icon> <span class="text-uppercase">Appointments</span> </a>
-      <button mat-menu-item routerLink="/service"> <span class="text-uppercase">Services</span> </button>
-      <!--<button mat-menu-item> <span class="text-uppercase">Careers</span> </button>-->
-      <!--<button mat-menu-item> <span class="text-uppercase">Reviews</span> </button>-->
-      <button mat-menu-item routerLink="/warranty"> <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span> </button>
-      <button mat-menu-item routerLink="/financing"> <span class="text-uppercase">Financing Available</span> </button>
-      <button mat-menu-item routerLink="/blog"> <span class="text-uppercase">About Us</span> </button>
-      <button mat-menu-item routerLink="/promotions"> <span class="text-uppercase">Current Promotions</span> </button>
-    </mat-menu>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item href="{{telephoneLink}}"><mat-icon>phone</mat-icon><span class="text-uppercase">Call</span> </a>
+    <a mat-menu-item href="{{googleUrl}}" target="_blank"> <mat-icon>directions</mat-icon><span class="text-uppercase">Directions</span> </a>
+    <a mat-menu-item href="{{appointmentUrl}}" target="_blank"><mat-icon>calendar_today</mat-icon> <span class="text-uppercase">Appointments</span> </a>
+    <button mat-menu-item routerLink="/service"> <span class="text-uppercase">Services</span> </button>
+    <!--<button mat-menu-item> <span class="text-uppercase">Careers</span> </button>-->
+    <!--<button mat-menu-item> <span class="text-uppercase">Reviews</span> </button>-->
+    <button mat-menu-item routerLink="/warranty"> <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span> </button>
+    <button mat-menu-item routerLink="/financing"> <span class="text-uppercase">Financing Available</span> </button>
+    <button mat-menu-item routerLink="/blog"> <span class="text-uppercase">About Us</span> </button>
+    <button mat-menu-item routerLink="/promotions"> <span class="text-uppercase">Current Promotions</span> </button>
+  </mat-menu>
   <mat-toolbar-row class="d-flex flex-wrap flex-row justify-content-between">
     <div class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
       <img src="./assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair"/>
     </div>
-    <!--
     <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>more_vert</mat-icon>
+      <!--<mat-icon>more_vert</mat-icon>-->
       <mat-icon>menu</mat-icon>
     </button>
-    -->
   </mat-toolbar-row>
 </mat-toolbar>
 
@@ -30,94 +28,93 @@
 
 <router-outlet (activate)='onActivate($event)'></router-outlet>
 
-  <div class="footer-card">
-    <div>
-      <div>
-        <div class="footer-box">
-          <h5>Hours of Operation</h5>
-          <div><span>Monday</span><span>8AM - 5PM</span></div>
-          <div><span>Tuesday</span><span>8AM - 5PM</span></div>
-          <div><span>Wednesday</span><span>8AM - 5PM</span></div>
-          <div><span>Thursday</span><span>8AM - 5PM</span></div>
-          <div><span>Friday</span><span>8AM - 5PM</span></div>
-          <div><span>Saturday</span><span>Closed</span></div>
-          <div><span>Sunday</span><span>Closed</span></div>
+<div class="footer-card">
+  <div class="footer-box">
+    <h5>Hours of Operation</h5>
+    <div class="hours"><span>Monday</span><span>8AM - 5PM</span></div>
+    <div class="hours"><span>Tuesday</span><span>8AM - 5PM</span></div>
+    <div class="hours"><span>Wednesday</span><span>8AM - 5PM</span></div>
+    <div class="hours"><span>Thursday</span><span>8AM - 5PM</span></div>
+    <div class="hours"><span>Friday</span><span>8AM - 5PM</span></div>
+    <div class="hours"><span>Saturday</span><span>Closed</span></div>
+    <div class="hours"><span>Sunday</span><span>Closed</span></div>
+  </div>
+  <div class="footer-box">
+    <h5>Contact Info</h5>
+    <a class="footer-link" href="{{googleUrl}}"><span>2459 Fruitvale Ave, Suite 1</span></a>
+    <a class="footer-link" href="{{googleUrl}}"><span>Bakersfield, CA 93308</span></a><br/>
+    <br/>
+    <a class="footer-link" href="{{telephoneLink}}"><span>(661) 637-0669</span></a>
+    <a class="footer-link" href="mailto:contact@ableautotech.com?subject=website">contact@ableautotech.com</a>
+  </div>
+  <div class="footer-box">
+    <h5>Resources</h5>
+    <ul>
+      <li>
+        <div>
+          <a class="footer-link" href="https://ownerautosite.com/Security/Index.aspx?AspxAutoDetectCookieSupport=1" target="_blank">Mitchell1 Owner Auto Site Login</a>
         </div>
-        <div class="footer-box flex-grow-1">
-          <h5>Contact Info</h5>
-          <ul>
-            <li>
-              <a class="footer-link" href="{{googleUrl}}"><span>Bakersfield, CA 9308</span></a><br/>
-              <a class="footer-link" href="{{googleUrl}}"><span>2459 Fruitvale Ave, Ste 1</span></a>
-            </li>
-            <hr/>
-            <li>
-              <a class="footer-link" href="{{telephoneLink}}"><span>(661) 637-0669</span></a>
-            </li>
-            <hr/>
-            <li>
-              <a class="footer-link" href="mailto:contact@ableautotech.com?subject=website">contact@ableautotech.com</a>
-            </li>
-          </ul>
+      </li>
+      <li>
+        <div>
+          <a class="footer-link" href="{{appointmentUrl}}" target="_blank">Request Appointment (Without Login)</a>
         </div>
-        <div class="footer-box flex-grow-1">
-          <h5>Resources</h5>
-          <ul>
-            <li>
-              <div>
-                <a class="footer-link" href="https://ownerautosite.com/Security/Index.aspx?AspxAutoDetectCookieSupport=1" target="_blank">Mitchell1 Owner Auto Site - Login</a>
-                <p>Login to view services and repair history, manage vehicles, and schedule appointments</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <a class="footer-link" href="{{appointmentUrl}}" target="_blank">Request Appointment - Without Logging In to Owner Auto Site</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-box">
+    <h6>Follow Us!</h6>
+    <div class="social-media">
+      <div class="social-icon facebook-icon"></div>
+      <div class="social-icon insta-icon"></div>
+      <div class="social-icon twitter-icon"></div>
+    </div>
+    <h6>Serving Bakersfield for 20 Years</h6>
+    <div class="social-media">
+      <img style="padding: 0.5rem; border-radius: 5px; width: 120px; height: 120px;" src="./assets/img/20.jpg"/>
+      <img style="padding: 0.5rem; border-radius: 5px; width: 120px; height: 120px;" src="./assets/img/write-google-reviews.png"/>
     </div>
   </div>
+</div>
 
 
 
 <!--
-<div class="footer-top"></div>
-<div class="footer">
+  <div class="footer-top"></div>
+  <div class="footer">
   <div class="row">
-    <div class="col-xs-12 col-sm-3">
-      <a routerLink="home">
-        <img width="120" src="./assets/img/square_black.png">
-      </a>
-      <h4> <a href="tel:+16616370669" > (661) 637-0669 </a> </h4>
-      <h5> Monday - Friday 8AM to 5PM </h5>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <a routerLink="contact">Location</a><br/>
-      <a routerLink="appointment">Appointments</a><br/>
-      <a routerLink="service">Services</a><br/>
-      <a routerLink="career">Careers</a><br/>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="social-icon">
-        <a href="https://www.facebook.com/ableautoshop/" target="_blank">
-          <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="social-icon">
-        <a href="https://twitter.com/ableautoshop" target="_blank">
-          <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="social-icon">
-        <a target="_blank" href="https://www.surecritic.com/reviews/able-auto-and-truck-repair?nhd=1">
-          <img src="https://www.surecritic.com/assets/business_badge.png" alt="Able Auto And Truck Repair Reviews">
-        </a>
-      </div>
-    </div>
+  <div class="col-xs-12 col-sm-3">
+  <a routerLink="home">
+  <img width="120" src="./assets/img/square_black.png">
+  </a>
+  <h4> <a href="tel:+16616370669" > (661) 637-0669 </a> </h4>
+  <h5> Monday - Friday 8AM to 5PM </h5>
   </div>
-</div>
-  -->
+  <div class="col-xs-12 col-sm-3">
+  <a routerLink="contact">Location</a><br/>
+  <a routerLink="appointment">Appointments</a><br/>
+  <a routerLink="service">Services</a><br/>
+  <a routerLink="career">Careers</a><br/>
+  </div>
+  <div class="col-xs-12 col-sm-3">
+  </div>
+  <div class="col-xs-12 col-sm-3">
+  <div class="social-icon">
+  <a href="https://www.facebook.com/ableautoshop/" target="_blank">
+  <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+  </a>
+  </div>
+  <div class="social-icon">
+  <a href="https://twitter.com/ableautoshop" target="_blank">
+  <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+  </a>
+  </div>
+  <div class="social-icon">
+  <a target="_blank" href="https://www.surecritic.com/reviews/able-auto-and-truck-repair?nhd=1">
+  <img src="https://www.surecritic.com/assets/business_badge.png" alt="Able Auto And Truck Repair Reviews">
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+-->
