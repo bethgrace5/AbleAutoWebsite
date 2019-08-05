@@ -62,12 +62,59 @@
     </div>
     <h6>Nationwide warranty</h6>
     <p>Service available from ANY shop in the network</p>
-    <button [routerLink]="'/warranty'" mat-button color="primary">
+    <button [routerLink]="'/warranty'" mat-raised-button color="warn">
       SEE DETAILS
       <mat-icon>keyboard_arrow_right</mat-icon>
     </button>
   </div>
+</div>
 
+<div class="general">
+  <div class="general-item">
+    <h4>Services</h4>
+    <p>We provide services for general auto repair, focusing on preventative maintence. Service is available for most vehicle makes and models.</p>
+    <ul>
+      <li>Air Conditioning</li>
+      <li>Lube Oil Filter</li>
+      <li>Brake Service</li>
+    </ul>
+    <div>
+      <button [routerLink]="'/service'" mat-raised-button color="accent">
+        ALL SERVICES
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="general-item">
+    <h4>Financing Available!</h4>
+    <p>We provide financing through [Financing Service]</p>
+    <div>
+      <button [routerLink]="'/financing'" mat-raised-button color="primary">
+        MORE INFO
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div class="review-banner-wrapper">
+  <div class="review-header">
+    <div>
+      <h2>Our Customers Love Us <mat-icon>favorite</mat-icon> </h2>
+    </div>
+    <h4>Don't just take our word for it!</h4>
+    <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
+  </div>
+  <div class="review-row">
+    <div class="review-yellow-page"></div>
+  </div>
+  <div class="review-action">
+    <button [routerLink]="'/reviews'" mat-raised-button color="basic">
+      MORE REVIEWS
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
 </div>
 
 <div class="sunset-banner-wrapper">
@@ -86,57 +133,3 @@
   </div>
 </div>
 
-<div class="review-banner-wrapper">
-  <div class="review-header">
-    <div>
-      <h2>Our Customers Love Us <mat-icon>favorite</mat-icon> </h2>
-    </div>
-    <h4>Don't just take our word for it!</h4>
-    <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>
-  </div>
-  <div class="review-row">
-    <div class="review-yellow-page"></div>
-    <div class="review-google"></div>
-  </div>
-  <button [routerLink]="'/reviews'" mat-raised-button color="accent">
-    MORE REVIEWS
-    <mat-icon>keyboard_arrow_right</mat-icon>
-  </button>
-</div>
-
-<!--
-<div>
-  <h4>Don't Just Take Our Word!</h4>
-  <img div src="./assets/img/yellowPage.png" class="yp-image" alt="Yellow Pages Review"/>
-  <div>
-    <p><strong>Our customers love us!</strong></p>
-  </div>
-</div>
--->
-
-<!--
-  <div class="item1">
-  <h4>Services</h4>
-  <ul>
-  <li>Air Conditioning</li>
-  <li>Lube Oil Filter</li>
-  <li>Brake Service</li>
-  </ul>
-  <button [routerLink]="'/service'" mat-button color="basic">
-  ALL SERVICES
-  <mat-icon>keyboard_arrow_right</mat-icon>
-  </button>
-  </div>
-  <div class="item1">
-  <h4>Makes And Models</h4>
-  <p>We are general auto repair servicing most makes and models.</p>
-  </div>
-  <div class="item1">
-  <h4>Financing Available!</h4>
-  <p>We provide financing through [Financing Service]</p>
-  <button [routerLink]="'/financing'" mat-raised-button color="basic">
-  MORE INFO
-  <mat-icon>keyboard_arrow_right</mat-icon>
-  </button>
-  </div>
--->
