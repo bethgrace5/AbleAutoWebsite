@@ -50,12 +50,12 @@ const appRoutes: Routes = [
   // { path: 'apply',       component: ApplyComponent },
   // { path: 'appointment', component: AppointmentComponent },
   { path: 'warranty',    component: WarrantyComponent },
-  { path: 'aaa',         component: AaaInfoComponent },
+  //{ path: 'aaa',         component: AaaInfoComponent },
   { path: 'reviews',     component: ReviewsComponent },
-  { path: 'blog/:id',    component: BlogComponent },
-  { path: 'blog',        component: BlogComponent },
+  //{ path: 'blog/:id',    component: BlogComponent },
+  //{ path: 'blog',        component: BlogComponent },
   { path: 'financing',   component: FinancingComponent },
-  { path: 'promotions',  component: PromotionsComponent },
+  //{ path: 'promotions',  component: PromotionsComponent },
   { path: '**',   redirectTo: '' }
 ];
 
