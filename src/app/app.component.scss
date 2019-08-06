@@ -294,6 +294,14 @@ strong
   flex: 0;
   flex-direction: column;
 }
+.review-wrapper {
+  border-top: 1px solid #d0d0d0;
+  background-image: url("/assets/img/bg01.png");
+  padding: 2rem;
+  display: flex;
+  flex: 0;
+  flex-direction: column;
+}
 .review-action {
   padding: 0rem 1rem;
   display: flex;
@@ -307,6 +315,13 @@ strong
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.review-page-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .review-header {
@@ -698,6 +713,12 @@ img.mat-card-image.caption-image {
   }
   .service-column {
     flex-direction: column;
+  }
+  .review-page-row {
+    flex-direction: column;
+  }
+  .review-wrapper {
+    padding: 0.5rem;
   }
 }
 /* =================== 5. Extra Small Devices, Phones ======================= */
