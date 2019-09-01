@@ -16,6 +16,10 @@
     <a class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
       <img src="./assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair"/>
     </a>
+    <div class="toolbar-desktop-buttons">
+      <button mat-button mat-flat-button color="primary" routerLink="/service"><span class="text-uppercase">Services</span></button>
+      <button mat-button mat-flat-button color="primary" routerLink="/promotions"><span class="text-uppercase">Promotions</span></button>
+    </div>
     <button mat-icon-button [matMenuTriggerFor]="menu">
       <!--<mat-icon>more_vert</mat-icon>-->
       <mat-icon>menu</mat-icon>
@@ -23,9 +27,7 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-
-<div class="toolbar-spacer">
-</div>
+<div class="toolbar-spacer"></div>
 
 <router-outlet (activate)='onActivate($event)'></router-outlet>
 

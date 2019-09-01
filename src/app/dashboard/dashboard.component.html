@@ -1,4 +1,5 @@
 <div class="feature-place">
+  <!--
   <div class="feature-text">
     <div class="aaa-brand" [routerLink]="'/aaa'">
       <img src="./assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair"/>
@@ -11,7 +12,22 @@
       </div>
     </div>
   </div>
+  -->
 </div>
+
+<div class="feature-text">
+  <div class="aaa-brand">
+    <img src="./assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair"/>
+  </div>
+  <div class="local-text-container">
+    <div class="local-text">
+      <h5>Locally Owned and Operated</h5>
+      <span>Serving the greater Bakersfield area</span>
+      <span><strong>Since <i>1998</i></strong></span>
+    </div>
+  </div>
+</div>
+
 
 <div class="main-banner-wrapper">
   <div class="action-banner-wrapper">
@@ -29,7 +45,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="blog-banner-wrapper">
   <div class="blog-item" id="blog2">
@@ -76,14 +91,16 @@
   </div>
   <div class="general-item">
     <h4>Financing Available!</h4>
-    <p>We provide financing through a financing company</p>
-    <!--<div>
+    <a class="clickable" href="https://www.mysynchrony.com/mysyf/open-account/auto-parts-and-services.html?intcmp=na-home-nav-Auto_Tires_Parts_and_Services-internal">
+      <img src="./assets/img/Synch-Car-Care.png" class="synchrony-brand-sm" alt="Synchrony Car Care Logo"/>
+    </a>
+    <p>We Provide Financing Through <a href="https://www.mysynchrony.com/mysyf/open-account/auto-parts-and-services.html?intcmp=na-home-nav-Auto_Tires_Parts_and_Services-internal">SYNCHRONY CAR CARE&trade;</a></p>
+    <div>
       <button [routerLink]="'/financing'" mat-raised-button color="primary">
         MORE INFO
         <mat-icon>keyboard_arrow_right</mat-icon>
       </button>
     </div>
-    -->
   </div>
 </div>
 
@@ -91,7 +108,7 @@
 <div class="review-banner-wrapper">
   <div class="review-header">
     <div>
-      <h2>Our Customers Love Us <mat-icon>favorite</mat-icon> </h2>
+      <h2>Excellent Reviews <mat-icon>favorite</mat-icon> </h2>
     </div>
     <h4>Don't just take our word for it!</h4>
     <p>Excellent reviews across multiple sites including Google, Yelp, SureCritic, Yellow Pages, Facebook</p>

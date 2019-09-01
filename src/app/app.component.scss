@@ -18,6 +18,10 @@ strong
 {
   font-family: 'Nunito Sans', sans-serif;
 }
+.clickable {
+  cursor: pointer;
+}
+
 .main-banner-wrapper {
   flex-wrap: wrap;
   display: flex;
@@ -38,6 +42,16 @@ strong
   flex-direction: column;
   justify-content: center;
   align-self: center;
+}
+.synchrony-brand-sm {
+  max-width: 190px;
+  min-width: 180px;
+  margin: 10px;
+}
+.synchrony-brand {
+  max-width: 290px;
+  min-width: 280px;
+  margin: 10px;
 }
 .warranty-banner-wrapper {
   padding: 2rem 0rem;
@@ -110,6 +124,10 @@ strong
   justify-content: center;
 }
 
+.finance-buttons button {
+  margin: 0.5rem;
+}
+
 .finance-header {
   padding: 0.5rem;
   display: flex;
@@ -124,10 +142,10 @@ strong
 }
 
 .finance-column-section {
+  align-items: center;
   display: flex;
   flex: 1;
   flex-direction: column;
-  flex-basis: 50%;
   margin: 0.5rem 0.5rem 2rem 0.5rem;
 }
 .finance-column-section h4 {
@@ -460,11 +478,10 @@ img.mat-card-image.caption-image {
 }
 
 .feature-text {
-  max-width: 450px;
-  border: 1px solid $secondblue;
+  padding: 0.5rem;
   color: #00264d;
-  background-color: rgba(255,255,255,0.6);
-  border-radius: 7px;
+  background-image: url('/assets/img/bg01.png');
+  background-repeat: repeat;
   padding: 0.5rem 1rem;
   display: flex;
   flex: 1;
@@ -607,25 +624,17 @@ img.mat-card-image.caption-image {
 }
 
 .main-toolbar {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
   padding: 20px 0px 8px 0px;
   border-bottom: 3px solid $secondblue;
   position: fixed;
   z-index:100;
 }
 
-.fill-space {
-  flex: 1 1 auto;
-  flex-grow: 1;
-  display: block;
-}
-
 .toolbar-spacer {
   padding-top: 80px;
-}
-
-.toolbar-cars {
-  max-width: 150px;
-  cursor: pointer;
 }
 
 .toolbar-brand {
@@ -633,6 +642,16 @@ img.mat-card-image.caption-image {
   cursor: pointer;
 }
 
+.toolbar-desktop-buttons {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.toolbar-desktop-buttons button {
+  margin: 0rem 1rem;
+}
 
 
 /* =================== 2. Large Devices, Wide Screens ======================= */
@@ -643,6 +662,10 @@ img.mat-card-image.caption-image {
 }
 /* =================== 4.  Small Devices, Tablets =========================== */
 @media only screen and (max-width : 768px) {
+  .toolbar-desktop-buttons {
+    display: none;
+  }
+
   .yp-image {
     margin: 0;
     padding: 0;
@@ -654,7 +677,7 @@ img.mat-card-image.caption-image {
   }
 
   .feature-place {
-    height: 350px;
+    height: 200px;
   }
 
   .sunset-image {
