@@ -33,7 +33,7 @@ strong
 .aaa-brand {
   max-width: 90px;
   min-width: 80px;
-  margin: 10px;
+  margin: 10px 0px 0px 0px;
 }
 .warranty-brand {
   padding: 10px;
@@ -223,7 +223,7 @@ strong
 }
 
 .action-banner-wrapper {
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -246,7 +246,7 @@ strong
   align-content: center;
 }
 .local-text-container {
-  padding: 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
 .local-text {
   display: flex;
@@ -478,11 +478,9 @@ img.mat-card-image.caption-image {
 }
 
 .feature-text {
-  padding: 0.5rem;
   color: #00264d;
   background-image: url('/assets/img/bg01.png');
   background-repeat: repeat;
-  padding: 0.5rem 1rem;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -677,7 +675,7 @@ img.mat-card-image.caption-image {
   }
 
   .feature-place {
-    height: 200px;
+    height: 180px;
   }
 
   .sunset-image {
