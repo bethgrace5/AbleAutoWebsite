@@ -22,13 +22,35 @@ strong
   cursor: pointer;
 }
 
+.covid-text {
+  background: white;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border: 2px solid #704370;
+  color: #4d004d;
+  font-size: 12px;
+  background: #f5eff5;
+  p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  h5 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+.covid-icon {
+  color: #4d004d;
+}
+
 .main-banner-wrapper {
-  flex-wrap: wrap;
-  display: flex;
-  flex: 0;
+  position: fixed;
+  bottom: 0;
   justify-content: space-between;
   background-image: url('/assets/img/bg01.png');
   background-repeat: repeat;
+  border-top: 2px solid white;
+  width: 100%;
 }
 .aaa-brand {
   max-width: 90px;
@@ -230,6 +252,10 @@ strong
   justify-content: center;
   align-content: center;
   background: $boldblue;
+}
+.action-button-wrapper {
+  display: flex;
+  align-items: center;
 }
 .action-banner-wrapper span {
   padding-top: 3px;
@@ -464,7 +490,6 @@ img.mat-card-image.caption-image {
 }
 
 .feature-place {
-  width: 100vw;
   height: 400px;
   background-image: url("/assets/img/road_web.jpg");
   background-size: cover;
@@ -478,6 +503,7 @@ img.mat-card-image.caption-image {
 }
 
 .feature-text {
+  padding: 0rem 0rem 1rem 1rem;
   color: #00264d;
   background-image: url('/assets/img/bg01.png');
   background-repeat: repeat;
@@ -486,6 +512,8 @@ img.mat-card-image.caption-image {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  border-top: 2px solid $boldblue;
+  border-bottom: 2px solid white;
 }
 
 
@@ -555,6 +583,7 @@ img.mat-card-image.caption-image {
   flex-direction: row;
   background: $boldblue;
   color: #ffffff;
+  padding-bottom: 6rem;
 }
 
 .fooger-card a, .fooger-card span, .fooger-card li {
