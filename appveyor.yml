@@ -4,10 +4,9 @@ branches:
   - release
 skip_tags: true
 clone_depth: 50
+install:
+- cmd: npm install
 build_script:
-- sh: >-
-    npm install
-
-    npm run test_for_build_server
-
-    npm run build
+- cmd: npm run build
+test_script:
+- cmd: npm run test_for_build_server
