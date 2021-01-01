@@ -13,13 +13,13 @@ init:
   - ps: Update-AppveyorBuild -Version "$(Get-Date -format yyyy.M.d).$env:APPVEYOR_BUILD_NUMBER"
 
 install:
-  - cmd: npm install
+  - npm install
 
 before_build:
   - node --version
 
 build_script:
-  - cmd: npm run build
+  - npm run build
 
 test_script:
-  - cmd: npm run test_for_build_server
+  - npm run test_for_build_server
