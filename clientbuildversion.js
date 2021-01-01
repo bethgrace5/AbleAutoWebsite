@@ -7,5 +7,5 @@ function setVersion() {
   const fs = require('fs');
   var indexFile = fs.readFileSync('./src/index.html', 'utf8');
   indexFile = indexFile.replace('[APPVEYOR_BUILD_VERSION]', version);
-  fs.writeFileSync('./src/index.html', indexFile, 'utf8');'
+  fs.writeFileSync('./src/index.html', indexFile, 'utf8');
 }
