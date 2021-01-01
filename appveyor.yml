@@ -5,10 +5,21 @@ branches:
 skip_tags: true
 clone_depth: 50
 environment:
-  nodejs_version: "12"
+  nodejs_version: 12.0.0
+image: ubuntu
+stack: node $jodejs_version
+
+init:
+  - ps: Update-AppveyorBuild -Version "$Get-Date -format yyyy.M.d).$env:APPVEYOR_BUILD_NUMBER"
+
 install:
 - cmd: npm install
+
+before_build:
+  - node --version
+
 build_script:
 - cmd: npm run build
+
 test_script:
 - cmd: npm run test_for_build_server
