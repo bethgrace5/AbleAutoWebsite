@@ -4,6 +4,8 @@ branches:
   - release
 skip_tags: true
 clone_depth: 50
+environment:
+  nodejs_version: 12.0.0
 install:
 - cmd: npm install
 build_script:
