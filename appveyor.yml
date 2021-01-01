@@ -7,10 +7,10 @@ clone_depth: 50
 environment:
   nodejs_version: 12.0.0
 image: ubuntu
-stack: node $jodejs_version
+stack: node $nodejs_version
 
 init:
-  - ps: Update-AppveyorBuild -Version "$Get-Date -format yyyy.M.d).$env:APPVEYOR_BUILD_NUMBER"
+  - ps: Update-AppveyorBuild -Version "$(Get-Date -format yyyy.M.d).$env:APPVEYOR_BUILD_NUMBER"
 
 install:
 - cmd: npm install
