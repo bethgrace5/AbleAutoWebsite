@@ -1,0 +1,13 @@
+version: 1.0.{build}
+branches:
+  only:
+  - release
+skip_tags: true
+clone_depth: 50
+build_script:
+- sh: >-
+    npm install
+
+    npm run test_for_build_server
+
+    npm run build
