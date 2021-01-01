@@ -26,8 +26,8 @@ test_script:
   - npm run test_for_build_server
 
 artifacts:
-  - path: 'dist/'
-  - name: AwsArtifact
+- path: dist
+- name: AwsArtifact
 
 deploy:
 - provider: Environment
