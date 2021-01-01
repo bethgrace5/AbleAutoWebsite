@@ -31,6 +31,24 @@
 
 <router-outlet (activate)='onActivate($event)'></router-outlet>
 
+
+<div class="main-banner-wrapper">
+  <div class="action-banner-wrapper">
+    <div class="action-button-wrapper">
+      <a href="tel:+16616370669" mat-fab color="basic"> <mat-icon aria-label="call">phone</mat-icon> </a>
+      <span>call</span>
+    </div>
+    <div class="action-button-wrapper">
+      <a href="{{googleUrl}}" target="_blank" mat-fab color="basic"> <mat-icon aria-label="directions">directions</mat-icon> </a>
+      <span>directions</span>
+    </div>
+    <div class="action-button-wrapper">
+      <a href="{{appointmentUrl}}" target="_blank" mat-fab color="accent"> <mat-icon aria-label="book appointment">calendar_today</mat-icon> </a>
+      <span>appointment</span>
+    </div>
+  </div>
+</div>
+
 <div class="footer-card">
   <div class="footer-box">
     <h5>Hours of Operation</h5>
