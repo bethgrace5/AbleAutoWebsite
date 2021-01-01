@@ -17,6 +17,7 @@ install:
 
 before_build:
   - node --version
+  - node ./clientbuildversion.js -version $APPVEYOR_BUILD_VERSION
 
 build_script:
   - npm run build
