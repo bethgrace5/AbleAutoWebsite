@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { AppModule } from '../app.module';
 
 import { WarrantyComponent } from './warranty.component';
 
@@ -8,7 +9,9 @@ describe('WarrantyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WarrantyComponent ]
+      imports: [
+        AppModule,
+      ]
     })
     .compileComponents();
   }));
