@@ -1,10 +1,13 @@
 <mat-toolbar class="main-toolbar">
   <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/"> <span class="text-uppercase">Home</span> </button>
-    <button mat-menu-item routerLink="/service"> <span class="text-uppercase">Services</span> </button>
-    <button mat-menu-item routerLink="/warranty"> <span class="text-uppercase">3 Years / 36,000 Miles Warranty</span>
+    <button mat-menu-item routerLink="/" aria-label="home"> <span class="text-uppercase">Home</span> </button>
+    <button mat-menu-item routerLink="/service" aria-label="services"> <span class="text-uppercase">Services</span>
     </button>
-    <button mat-menu-item routerLink="/financing"> <span class="text-uppercase">Financing Available</span> </button>
+    <button mat-menu-item routerLink="/warranty" aria-label="warranty"> <span class="text-uppercase">3 Years / 36,000
+        Miles Warranty</span>
+    </button>
+    <button mat-menu-item routerLink="/financing" aria-label="financing"> <span class="text-uppercase">Financing
+        Available</span> </button>
     <a mat-menu-item href="{{telephoneLink}}">
       <mat-icon>phone</mat-icon><span class="text-uppercase">Call</span>
     </a>
@@ -21,14 +24,14 @@
   </mat-menu>
   <mat-toolbar-row class="d-flex flex-wrap flex-row justify-content-between">
     <a class="toolbar-brand" (click)="isMenuCollapsed = true" routerLink="/dashboard">
-      <img src="./assets/img/header-logo.png" class="img-fluid" alt="Able Auto and Truck Repair" />
+      <img src="./assets/img/header-logo.png" width="200" height="80" alt="Able Auto and Truck Repair" />
     </a>
     <div class="toolbar-desktop-buttons">
-      <button mat-button mat-flat-button color="primary" routerLink="/service"><span
+      <button mat-button mat-flat-button color="primary" routerLink="/service" aria-label="services"><span
           class="text-uppercase">Services</span></button>
       <!--<button mat-button mat-flat-button color="primary" routerLink="/promotions"><span class="text-uppercase">Promotions</span></button>-->
     </div>
-    <button mat-icon-button [matMenuTriggerFor]="menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu">
       <!--<mat-icon>more_vert</mat-icon>-->
       <mat-icon>menu</mat-icon>
     </button>
@@ -42,24 +45,24 @@
 
 <div class="main-banner-wrapper">
   <div class="action-banner-wrapper">
-    <div class="action-button-wrapper">
-      <a href="tel:+16616370669" mat-fab color="basic">
-        <mat-icon aria-label="call">phone</mat-icon>
+    <button mat-raised-button color="basic" aria-label="call">
+      <a href="tel:+16616370669">
+        <span>call</span>
       </a>
-      <span>call</span>
-    </div>
-    <div class="action-button-wrapper">
-      <a href="{{googleUrl}}" target="_blank" mat-fab color="basic" rel="noopener">
-        <mat-icon aria-label="directions">directions</mat-icon>
+      <!-- <mat-icon aria-label="call" class="action-icon-button">phone</mat-icon> -->
+    </button>
+    <button aria-label="directions" mat-raised-button color="basic">
+      <a href="{{googleUrl}}" target="_blank" rel="noopener">
+        <span>directions</span>
       </a>
-      <span>directions</span>
-    </div>
-    <div class="action-button-wrapper">
-      <a href="{{appointmentUrl}}" target="_blank" mat-fab color="accent" rel="noopener">
-        <mat-icon aria-label="book appointment">calendar_today</mat-icon>
+      <!-- <mat-icon aria-label="directions" class="action-icon-button">directions</mat-icon> -->
+    </button>
+    <button mat-raised-button color="accent" aria-label="appointment">
+      <a href="{{appointmentUrl}}" target="_blank" rel="noopener">
+        <span style="color: black;">appointment</span>
       </a>
-      <span>appointment</span>
-    </div>
+      <!-- <mat-icon aria-label="book appointment" class="action-icon-button">calendar_today</mat-icon> -->
+    </button>
   </div>
 </div>
 
@@ -76,14 +79,23 @@
   </div>
   <div class="footer-box">
     <h5>Contact Info</h5>
-    <a class="footer-link" href="{{googleUrl}}"><span>2459 Fruitvale Ave, Suite 1</span></a>
-    <a class="footer-link" href="{{googleUrl}}"><span>Bakersfield, CA 93308</span></a><br />
-    <br />
-    <a class="footer-link" href="{{telephoneLink}}"><span>(661) 637-0669</span></a>
-    <a class="footer-link"
-      href="mailto:contact@ableautotech.com?subject=contact request from web">contact@ableautotech.com</a>
-    <a class="footer-link"
-      href="mailto:appointments@ableautotech.com?subject=appointment request from web">appointments@ableautotech.com</a>
+    <div>
+      <a class="footer-link" href="{{googleUrl}}"><span>2459 Fruitvale Ave, Suite 1</span></a>
+    </div>
+    <div>
+      <a class="footer-link" href="{{googleUrl}}"><span>Bakersfield, CA 93308</span></a><br />
+    </div>
+    <div>
+      <a class="footer-link" href="{{telephoneLink}}"><span>(661) 637-0669</span></a>
+    </div>
+    <div>
+      <a class="footer-link"
+        href="mailto:contact@ableautotech.com?subject=contact request from web">contact@ableautotech.com</a>
+    </div>
+    <div>
+      <a class="footer-link"
+        href="mailto:appointments@ableautotech.com?subject=appointment request from web">appointments@ableautotech.com</a>
+    </div>
   </div>
   <div class="footer-box">
     <h5>Resources</h5>

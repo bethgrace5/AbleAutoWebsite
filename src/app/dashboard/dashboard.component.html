@@ -2,13 +2,18 @@
 </div>
 
 <div class="covid-text">
-  <h5><mat-icon class="covid-icon" aria-label="COVID-19">announcement</mat-icon> COVID-19 UPDATE:</h5>
-  <p>We are <strong>open as an essential business</strong>, and taking extra precautions. <!--Click <u>HERE</u> to learn more.--></p>
+  <h5>
+    <mat-icon class="covid-icon" aria-label="COVID-19">announcement</mat-icon> COVID-19 UPDATE:
+  </h5>
+  <p>We are <strong>open as an essential business</strong>, and taking extra precautions.
+    <!--Click <u>HERE</u> to learn more.-->
+  </p>
 </div>
 
 <div class="feature-text">
   <div class="aaa-brand">
-    <img src="./assets/img/aaa-approved-auto-repair.png" class="aaa-brand img-fluid" alt="AAA Approved Auto Repair" />
+    <img src="./assets/img/aaa-approved-auto-repair.png" width="90" height="90" class="aaa-brand img-fluid"
+      alt="AAA Approved Auto Repair" />
   </div>
   <div class="local-text-container">
     <div class="local-text">
@@ -31,7 +36,7 @@
     <div class="quilt-image"></div>
     <p>We put emphasis on attention to detail to help promote your repair decisions upfront</p>
   </div>
-
+  <!-- 
   <div class="blog-item" id="blog3">
     <h4>3 Years / 36,000 Miles Warranty</h4>
     <div [routerLink]="'/warranty'">
@@ -39,48 +44,12 @@
     </div>
     <h6>Nationwide warranty</h6>
     <p>Service available from ANY shop in the network</p>
-    <button [routerLink]="'/warranty'" mat-raised-button color="warn">
+    <button [routerLink]="'/warranty'" mat-raised-button color="warn" aria-label="warranty">
       SEE DETAILS
       <mat-icon>keyboard_arrow_right</mat-icon>
     </button>
-  </div>
+  </div> -->
 </div>
-
-<div class="general">
-  <div class="general-item">
-    <h4>Services</h4>
-    <p>We provide services for general auto repair, focusing on preventative maintence. Service is available for most
-      vehicle makes and models.</p>
-    <ul>
-      <li>Air Conditioning</li>
-      <li>Lube Oil Filter</li>
-      <li>Brake Service</li>
-    </ul>
-    <div>
-      <button [routerLink]="'/service'" mat-raised-button color="accent">
-        ALL SERVICES
-        <mat-icon>keyboard_arrow_right</mat-icon>
-      </button>
-    </div>
-  </div>
-  <div class="general-item">
-    <h4>Financing Available!</h4>
-    <a class="clickable"
-      href="https://www.mysynchrony.com/mysyf/open-account/auto-parts-and-services.html?intcmp=na-home-nav-Auto_Tires_Parts_and_Services-internal">
-      <img src="./assets/img/Synch-Car-Care.png" class="synchrony-brand-sm" alt="Synchrony Car Care Logo" />
-    </a>
-    <p>We Provide Financing Through <a
-        href="https://www.mysynchrony.com/mysyf/open-account/auto-parts-and-services.html?intcmp=na-home-nav-Auto_Tires_Parts_and_Services-internal">SYNCHRONY
-        CAR CARE&trade;</a></p>
-    <div>
-      <button [routerLink]="'/financing'" mat-raised-button color="primary">
-        MORE INFO
-        <mat-icon>keyboard_arrow_right</mat-icon>
-      </button>
-    </div>
-  </div>
-</div>
-
 
 <div class="review-banner-wrapper">
   <div class="review-header">
@@ -95,10 +64,68 @@
     <div class="review-yellow-page"></div>
   </div>
   <div class="review-action">
-    <button [routerLink]="'/reviews'" mat-raised-button color="basic">
+    <button [routerLink]="'/reviews'" mat-raised-button color="basic" aria-label="reviews">
       MORE REVIEWS
       <mat-icon>keyboard_arrow_right</mat-icon>
     </button>
+  </div>
+</div>
+
+<div class="general">
+</div>
+
+
+<div class="general">
+
+  <div class="general-item">
+    <h4>Services</h4>
+    <p>We provide services for general auto repair, focusing on preventative maintence. Service is available for most
+      vehicle makes and models.</p>
+    <ul>
+      <li>Air Conditioning</li>
+      <li>Lube Oil Filter</li>
+      <li>Brake Service</li>
+      <li>And Many More!</li>
+    </ul>
+    <div>
+      <button [routerLink]="'/service'" mat-raised-button color="basic" aria-label="services">
+        ALL SERVICES
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="general-item">
+    <h4>3 Years / 36,000 Miles Warranty</h4>
+    <!-- <a class="clickable"
+      href="https://www.mysynchrony.com/mysyf/open-account/auto-parts-and-services.html?intcmp=na-home-nav-Auto_Tires_Parts_and_Services-internal">
+       <img src="./assets/img/Synch-Car-Care.png" class="synchrony-brand-sm" alt="Synchrony Car Care Logo" /> 
+    </a>-->
+    <p>Nationwide warranty with service available from ANY shop in the network.</p>
+    <div>
+      <button [routerLink]="'/warranty'" mat-raised-button color="basic" aria-label="warranty" aria-label="warranty">
+        SEE DETAILS
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="general-item">
+    <h4>Financing Available!</h4>
+    <!-- <a class="clickable"
+      href="https://www.mysynchrony.com/mysyf/open-account/auto-parts-and-services.html?intcmp=na-home-nav-Auto_Tires_Parts_and_Services-internal">
+      <img src="./assets/img/Synch-Car-Care.png" class="synchrony-brand-sm" alt="Synchrony Car Care Logo" />
+    </a>-->
+    <p>We Provide Financing Through <a
+        href="https://www.mysynchrony.com/mysyf/open-account/auto-parts-and-services.html?intcmp=na-home-nav-Auto_Tires_Parts_and_Services-internal">SYNCHRONY
+        CAR CARE&trade;</a></p>
+    <div>
+      <button [routerLink]="'/financing'" mat-raised-button color="basic" aria-label="financing" aria-label="financing">
+        MORE INFO
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
   </div>
 </div>
 
@@ -118,7 +145,8 @@
           friction. As such, they must be replaced every so often. Our <strong>multi point inspection</strong> is
           performed by our ASE cerified technicians.</p>
         <p>You can be confident knowing about the health of your vehicle and when you need to take action to keep
-          <strong>you and all of and your passengers safe </strong> (including those with 4 paws and a tail)</p>
+          <strong>you and all of and your passengers safe </strong> (including those with 4 paws and a tail)
+        </p>
       </div>
     </div>
   </div>

@@ -1,1 +1,41 @@
-@import "../app.component.scss";
+@import "../../colors.scss";
+
+.review-google {
+    margin: 0.5rem;
+    border-radius: 2px;
+    margin: 0.5rem 0rem 1rem 1rem;
+    height: 120px;
+    width: 120px;
+    background-image: url("/assets/img/write-google-reviews.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+
+/* =================== 2. Large Devices, Wide Screens ======================= */
+@media only screen and (max-width : 1200px) {
+}
+/* =================== 3. Medium Devices, Desktops ========================== */
+@media only screen and (max-width : 992px) {
+}
+/* =================== 4.  Small Devices, Tablets =========================== */
+@media only screen and (max-width : 768px) {
+    .review-google {
+        height: 100px;
+        width: 100px;
+      }
+}
+/* =================== 5. Extra Small Devices, Phones ======================= */
+@media only screen and (max-width : 480px) {
+}
+/* =================== 6.  Custom, iPhone Retina ============================ */
+@media only screen and (max-width : 320px) {
+}
+
+/* REMOVE PARALLAX IE10+ CSS */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+}
+/* REMOVE PARALLAX IE Edge 12+ CSS */
+@supports (-ms-accelerator:true) {
+}
